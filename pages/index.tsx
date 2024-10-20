@@ -247,10 +247,10 @@ const Home: NextPage = () => {
           </div>
         </section>
 
-        <section className="bg-[#1E1E1E] py-30" ref={contactRef}>
+        <section className="bg-[#1E1E1E] py-24" ref={contactRef}>
           <div className="container mx-auto px-6">
             <div className="flex flex-col md:flex-row items-center justify-between">
-              <h2 className="text-3xl md:text-4xl font-bold mb-8 md:mb-0 font-montserrat md:w-1/2"> Transforme seus sonhos<br />em realidade</h2>
+              <h2 className="text-3xl md:text-4xl font-bold mb-8 md:mb-0 font-montserrat lg:w-1/2"> Transforme seus sonhos<br />em realidade</h2>
               <button className="bg-purple-600 text-white px-8 py-3 rounded-md text-sm md:text-base font-medium inline-flex items-center font-nunito hover:bg-purple-700 transition-colors duration-300">
                 Nosso WhatsApp
                 <svg className="ml-2 w-4 h-4" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
