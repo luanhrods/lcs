@@ -50,7 +50,7 @@ const Home: NextPage = () => {
           <button onClick={() => scrollToSection(testimonialsRef)} className="text-gray-400 hover:text-purple-600 text-sm md:text-base font-nunito transition-colors duration-300">Referências</button>
           <button onClick={() => scrollToSection(contactRef)} className="text-gray-400 hover:text-purple-600 text-sm md:text-base font-nunito transition-colors duration-300">Contato</button>
         </nav>
-        <button className="bg-transparent text-white px-4 py-2 rounded-md text-sm md:text-base font-medium font-nunito border border-purple-600 hover:bg-purple-600 transition-colors duration-300">
+        <button className="hidden md:block bg-transparent text-white px-4 py-2 rounded-md text-sm md:text-base font-medium font-nunito border border-purple-600 hover:bg-purple-600 transition-colors duration-300">
           Fale conosco agora
         </button>
         <button className="md:hidden" onClick={() => setMenuOpen(!menuOpen)}>
@@ -60,13 +60,24 @@ const Home: NextPage = () => {
         </button>
       </header>
 
-      {menuOpen && (
-        <div className="md:hidden bg-[#1E1E1E] p-4">
-          <button onClick={() => scrollToSection(servicesRef)} className="block w-full text-left py-2 text-gray-400 hover:text-purple-600 text-base font-nunito transition-colors duration-300">Serviços</button>
-          <button onClick={() => scrollToSection(testimonialsRef)} className="block w-full text-left py-2 text-gray-400 hover:text-purple-600 text-base font-nunito transition-colors duration-300">Referências</button>
-          <button onClick={() => scrollToSection(contactRef)} className="block w-full text-left py-2 text-gray-400 hover:text-purple-600 text-base font-nunito transition-colors duration-300">Contato</button>
+      {/* Mobile menu */}
+      <div className={`fixed top-0 right-0 bottom-0 w-64 bg-[#1E1E1E] z-50 transform transition-transform duration-300 ease-in-out ${menuOpen ? 'translate-x-0' : 'translate-x-full'}`}>
+        <div className="p-6">
+          <button onClick={() => setMenuOpen(false)} className="absolute top-4 right-4">
+            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+          <div className="mt-8">
+            <button onClick={() => scrollToSection(servicesRef)} className="block w-full text-left py-2 text-gray-400 hover:text-purple-600 text-base font-nunito transition-colors duration-300">Serviços</button>
+            <button onClick={() => scrollToSection(testimonialsRef)} className="block w-full text-left py-2 text-gray-400 hover:text-purple-600 text-base font-nunito transition-colors duration-300">Referências</button>
+            <button onClick={() => scrollToSection(contactRef)} className="block w-full text-left py-2 text-gray-400 hover:text-purple-600 text-base font-nunito transition-colors duration-300">Contato</button>
+            <button className="mt-4 w-full bg-transparent text-white px-4 py-2 rounded-md text-base font-medium font-nunito border border-purple-600 hover:bg-purple-600 transition-colors duration-300">
+              Fale conosco agora
+            </button>
+          </div>
         </div>
-      )}
+      </div>
 
       <main className="pb-20 relative z-10">
         <section className="container mx-auto px-6 pt-20 pb-32">
@@ -157,32 +168,44 @@ const Home: NextPage = () => {
             </svg>
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12">
+            
             {[
-              { icon: <svg className="w-8 h-8" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M5 3L19 12L5 21V3Z" fill="currentColor"/>
+              { icon: <svg width="69" height="69" viewBox="0 0 69 69" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fillRule="evenodd" clipRule="evenodd" d="M34.5 69C53.5538 69 69 53.5538 69 34.5C69 15.4462 53.5538 0 34.5 0C15.4462 0 0 15.4462 0 34.5C0 53.5538 15.4462 69 34.5 69Z" fill="#5454D4" fillOpacity="0.1"/>
+                  <path d="M31.0004 35.3334C30.1204 35.7734 29.387 36.4267 28.8404 37.24C28.5337 37.7067 28.5337 38.2934 28.8404 38.76C29.387 39.5734 30.1204 40.2267 31.0004 40.6667" stroke="#5454D4" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M39.2803 35.3334C40.1603 35.7734 40.8936 36.4267 41.4403 37.24C41.7469 37.7067 41.7469 38.2934 41.4403 38.76C40.8936 39.5734 40.1603 40.2267 39.2803 40.6667" stroke="#5454D4" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M31.0003 47.3333H39.0003C45.667 47.3333 48.3337 44.6666 48.3337 38V30C48.3337 23.3333 45.667 20.6666 39.0003 20.6666H31.0003C24.3337 20.6666 21.667 23.3333 21.667 30V38C21.667 44.6666 24.3337 47.3333 31.0003 47.3333Z" stroke="#5454D4" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M21.9736 28.68L47.6003 28.6666" stroke="#5454D4" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>, 
                 title: 'Criação de Websites', 
                 description: 'Criamos uma landingpage ou site com a melhor qualidade para seu negócio.' 
               },
-              { icon: <svg className="w-8 h-8" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                  <path d="M22 6L12 13L2 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+              { icon: <svg width="69" height="69" viewBox="0 0 69 69" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fillRule="evenodd" clipRule="evenodd" d="M34.5 69C53.5538 69 69 53.5538 69 34.5C69 15.4462 53.5538 0 34.5 0C15.4462 0 0 15.4462 0 34.5C0 53.5538 15.4462 69 34.5 69Z" fill="#F04037" fillOpacity="0.1"/>
+                  <path d="M36.3464 21.8934L44.213 25.3867C46.4797 26.3867 46.4797 28.0401 44.213 29.0401L36.3464 32.5334C35.453 32.9334 33.9864 32.9334 33.093 32.5334L25.2264 29.0401C22.9597 28.0401 22.9597 26.3867 25.2264 25.3867L33.093 21.8934C33.9864 21.4934 35.453 21.4934 36.3464 21.8934Z" stroke="#F04037" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M23 32.6666C23 33.7866 23.84 35.08 24.8667 35.5333L33.92 39.56C34.6133 39.8666 35.4 39.8666 36.08 39.56L45.1333 35.5333C46.16 35.08 47 33.7866 47 32.6666" stroke="#F04037" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M23 39.3334C23 40.5734 23.7333 41.6934 24.8667 42.2L33.92 46.2267C34.6133 46.5334 35.4 46.5334 36.08 46.2267L45.1333 42.2C46.2667 41.6934 47 40.5734 47 39.3334" stroke="#F04037" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>, 
                 title: 'Marketing Digital', 
                 description: 'Ajudamos você a ser lembrado e impactar o seu nicho no digital.' 
               },
-              { icon: <svg className="w-8  h-8" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M17 2H7C4.23858 2 2 4.23858 2 7V17C2 19.7614 4.23858 22 7 22H17C19.7614 22 22 19.7614 22 17V7C22 4.23858 19.7614 2 17 2Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                  <path d="M16 11.37C16.1234 12.2022 15.9813 13.0522 15.5938 13.799C15.2063 14.5458 14.5931 15.1514 13.8416 15.5297C13.0901 15.9079 12.2384 16.0396 11.4078 15.9059C10.5771 15.7723 9.80976 15.3801 9.21484 14.7852C8.61992 14.1902 8.22773 13.4229 8.09406 12.5922C7.9604 11.7615 8.09206 10.9099 8.47032 10.1584C8.84858 9.40685 9.45418 8.79374 10.201 8.40624C10.9478 8.01874 11.7978 7.87658 12.63 8C13.4789 8.12588 14.2649 8.52146 14.8717 9.12831C15.4785 9.73515 15.8741 10.5211 16 11.37Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                  <path d="M17.5 6.5H17.51" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+              { icon: <svg width="69" height="69" viewBox="0 0 69 69" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fillRule="evenodd" clipRule="evenodd" d="M34.5 69C53.5538 69 69 53.5538 69 34.5C69 15.4462 53.5538 0 34.5 0C15.4462 0 0 15.4462 0 34.5C0 53.5538 15.4462 69 34.5 69Z" fill="#FEDC5A" fillOpacity="0.1"/>
+                  <path d="M31.0004 35.3334C30.1204 35.7734 29.387 36.4267 28.8404 37.24C28.5337 37.7067 28.5337 38.2934 28.8404 38.76C29.387 39.5734 30.1204 40.2267 31.0004 40.6667" stroke="#FEDC5A" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M39.2803 35.3334C40.1603 35.7734 40.8936 36.4267 41.4403 37.24C41.7469 37.7067 41.7469 38.2934 41.4403 38.76C40.8936 39.5734 40.1603 40.2267 39.2803 40.6667" stroke="#FEDC5A" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M31.0003 47.3333H39.0003C45.667 47.3333 48.3337 44.6666 48.3337 38V30C48.3337 23.3333 45.667 20.6666 39.0003 20.6666H31.0003C24.3337 20.6666 21.667 23.3333 21.667 30V38C21.667 44.6666 24.3337 47.3333 31.0003 47.3333Z" stroke="#FEDC5A" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M21.9736 28.68L47.6003 28.6666" stroke="#FEDC5A" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>, 
                 title: 'Webdesign (UX)', 
                 description: 'Criamos experiências incríveis para seu website ou plataforma.' 
               },
-              { icon: <svg className="w-8 h-8" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M17 2H7C4.23858 2 2 4.23858 2 7V17C2 19.7614 4.23858 22 7 22H17C19.7614 22 22 19.7614 22 17V7C22 4.23858 19.7614 2 17 2Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                  <path d="M16 11.37C16.1234 12.2022 15.9813 13.0522 15.5938 13.799C15.2063 14.5458 14.5931 15.1514 13.8416 15.5297C13.0901 15.9079 12.2384 16.0396 11.4078 15.9059C10.5771 15.7723 9.80976 15.3801 9.21484 14.7852C8.61992 14.1902 8.22773 13.4229 8.09406 12.5922C7.9604 11.7615 8.09206 10.9099 8.47032 10.1584C8.84858 9.40685 9.45418 8.79374 10.201 8.40624C10.9478 8.01874 11.7978 7.87658 12.63 8C13.4789 8.12588 14.2649 8.52146 14.8717 9.12831C15.4785 9.73515 15.8741 10.5211 16 11.37Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                  <path d="M17.5 6.5H17.51" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+              { icon: <svg width="69" height="69" viewBox="0 0 69 69" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fillRule="evenodd" clipRule="evenodd" d="M34.5 69C53.5538 69 69 53.5538 69 34.5C69 15.4462 53.5538 0 34.5 0C15.4462 0 0 15.4462 0 34.5C0 53.5538 15.4462 69 34.5 69Z" fill="#FEDC5A" fillOpacity="0.1"/>
+                  <path d="M42.2 43.6667H27.8C25.8 43.6667 25 42.8134 25 40.6934V39.3067C25 37.1867 25.8 36.3334 27.8 36.3334H42.2C44.2 36.3334 45 37.1867 45 39.3067V40.6934C45 42.8134 44.2 43.6667 42.2 43.6667Z" stroke="#FEDC5A" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M39.5337 32.3333H30.467C28.467 32.3333 27.667 31.48 27.667 29.36V27.9733C27.667 25.8533 28.467 25 30.467 25H39.5337C41.5337 25 42.3337 25.8533 42.3337 27.9733V29.36C42.3337 31.48 41.5337 32.3333 39.5337 32.3333Z" stroke="#FEDC5A" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M35 47.3333V44.1333" stroke="#FEDC5A" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M35 35.3333V32.6666" stroke="#FEDC5A" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M35 20.6666V24.2533" stroke="#292D32" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>, 
                 title: 'Mídias Sociais', 
                 description: 'Gerenciamos, analisamos e produzimos tudo para você nas redes sociais.' 
@@ -240,7 +263,7 @@ const Home: NextPage = () => {
                 offset: 'md:translate-y-24', 
                 image: '/placeholder.svg',
                 text: "O Luan tornou nosso YouTube muito mais fácil de apresentar para possíveis parceiros. Recomendamos ele sem dúvida e estamos ansiosos pelos próximos projetos.",
-                name: "Leonardo Phelipe",
+                name: "Leonar do Phelipe",
                 position: "Fundador do zeroEleven Agency"
               },
             ].map((item, index) => (
@@ -262,8 +285,8 @@ const Home: NextPage = () => {
 
         <section className="bg-[#1E1E1E] py-24" ref={contactRef}>
           <div className="container mx-auto px-6">
-            <div className="flex flex-col items-center text-center">
-              <h2 className="text-3xl md:text-4xl font-bold mb-8 font-montserrat"> Transforme seus sonhos<br />em realidade</h2>
+            <div className="flex flex-col md:flex-row items-center justify-between">
+              <h2 className="text-3xl md:text-4xl font-bold mb-8 md:mb-0 font-montserrat md:w-1/2 text-center md:text-left"> Transforme seus sonhos<br />em realidade</h2>
               <button className="bg-purple-600 text-white px-8 py-3 rounded-md text-sm md:text-base font-medium inline-flex items-center font-nunito hover:bg-purple-700 transition-colors duration-300">
                 Nosso WhatsApp
                 <svg className="ml-2 w-4 h-4" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
