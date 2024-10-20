@@ -118,72 +118,37 @@ const Home: NextPage = () => {
               { icon: <Instagram className="w-8 h-8" />, title: 'Webdesign (UX)', description: 'Criamos experiências incríveis para seu website ou plataforma.' },
               { icon: <Instagram className="w-8 h-8" />, title: 'Mídias Sociais', description: 'Gerenciamos, analisamos e produzimos tudo para você nas redes sociais.' },
               { icon: <PenTool className="w-8 h-8" />, title: 'Design Gráfico', description: 'Fazemos imagens criativas e chamativas para seu negócio.' },
-              { icon: <Video className="w-8 h-8" />, title: 'Edição de vídeos', description: 'Tiramos sua imaginação do papel e ela se tornará realidade com a técnica correta.' },
-            ].map((service, index) => (
-              <div key={index} className="flex flex-col items-center text-center">
-                <div className="mb-4 text-purple-600">{service.icon}</div>
-                <h3 className="text-lg font-semibold mb-2 font-nunito">{service.title}</h3>
-                <p className="text-gray-400 text-sm font-nunito">{service.description}</p>
-              </div>
-            ))}
-          </div>
-        </section>
-
-        <section className="container mx-auto px-6 py-24">
-          <h2 className="text-3xl font-bold mb-16 flex items-center justify-center font-montserrat">
-            O que dizem sobre nós?
-            <Play className="ml-4 w-6 h-6" />
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 relative">
-            {[
-              { offset: 'md:translate-y-0', image: '/placeholder.svg' },
-              { offset: 'md:translate-y-12', image: '/placeholder.svg' },
-              { offset: 'md:translate-y-24', image: '/placeholder.svg' },
+              { icon: <Video className="w-8 h-8" />, title: 'Produção de Vídeos', description: 'Criamos vídeos, animações e conteúdo visual que se destacam.' },
             ].map((item, index) => (
-              <div key={index} className={`bg-[#1E1E1E] p-6 rounded-lg ${item.offset}`}>
-                <p className="text-gray-400 mb-4 text-sm font-nunito">
-                  Texto lindo e maravilhoso que vai ficar bem aqui para mostrar como seu cliente ficou feliz com nosso serviço e para mostrar que somos incríveis em duas linhas diferentes :)
-                </p>
-                <div className="flex items-center">
-                  <Image src={item.image} alt="Client" width={48} height={48} className="rounded-full mr-4" />
-                  <div>
-                    <h4 className="font-semibold text-sm font-nunito">Justin Lazorko, Diretor de Marketing</h4>
-                    <p className="text-xs text-gray-400 font-nunito">da YourListingExpert</p>
-                  </div>
+              <div key={index} className="bg-[#252525] p-6 rounded-lg flex flex-col items-center">
+                <div className="bg-purple-600 p-3 rounded-full w-12 h-12 flex items-center justify-center mb-4">
+                  {item.icon}
                 </div>
+                <h3 className="text-xl font-semibold mb-2 font-nunito">{item.title}</h3>
+                <p className="text-gray-400 text-sm font-nunito">{item.description}</p>
               </div>
             ))}
-          </div>
-        </section>
-
-        <section className="container mx-auto px-6 py-24">
-          <div className="flex flex-col md:flex-row items-center justify-between">
-            <h2 className="text-4xl font-bold mb-8 md:mb-0 font-montserrat md:w-1/2">Transforme seu sonho 
-              em realidade.</h2>
-            <button className="bg-transparent text-white px-8 py-3 rounded-md text-sm font-medium inline-flex items-center font-nunito border border-purple-600 hover:bg-purple-600 transition-colors duration-300">
-              Nosso WhatsApp
-              <Play className="ml-2 w-4 h-4" />
-            </button>
           </div>
         </section>
       </main>
 
       <footer className="bg-[#1E1E1E] py-8">
-        <div className="container mx-auto px-6">
-          <div className="flex flex-col md:flex-row justify-between items-center mb-4">
-            <div className="flex items-center space-x-2 mb-4 md:mb-0">
-              <div className="w-8 h-8 bg-purple-600 rounded-full"></div>
-              <span className="font-semibold text-sm font-montserrat">LC Studio</span>
-            </div>
-            <nav className="flex space-x-6">
-              <Link href="#" className="text-gray-400 hover:text-purple-600 text-sm font-nunito transition-colors duration-300">Ajuda</Link>
-              <Link href="#" className="text-gray-400 hover:text-purple-600 text-sm font-nunito transition-colors duration-300">Política de Privacidade</Link>
-              <Link href="#" className="text-gray-400 hover:text-purple-600 text-sm font-nunito transition-colors duration-300">Política de Dados</Link>
-            </nav>
+        <div className="container mx-auto px-6 flex flex-col items-center">
+          <h2 className="text-2xl font-bold mb-4 font-montserrat">Entre em contato</h2>
+          <div className="flex space-x-4">
+            <Link href="#" className="text-gray-400 hover:text-purple-600">
+              <Instagram className="w-6 h-6" />
+            </Link>
+            <Link href="#" className="text-gray-400 hover:text-purple-600">
+              <Youtube className="w-6 h-6" />
+            </Link>
+            <Link href="#" className="text-gray-400 hover:text-purple-600">
+              <Mail className="w-6 h-6" />
+            </Link>
           </div>
-          <div className="text-center md:text-left text-gray-400 text-xs font-nunito">
-            © 2005-2024 LC Studio (Former ProjetoMidia)
-          </div>
+          <p className="text-gray-400 text-sm mt-4 font-nunito">
+            &copy; 2024 Luan Chicale Studio. Todos os direitos reservados.
+          </p>
         </div>
       </footer>
     </div>
