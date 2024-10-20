@@ -1,44 +1,72 @@
 import type { NextPage } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
-import { useRef } from 'react'
+import { useRef, useState } from 'react'
 
 const Home: NextPage = () => {
   const servicesRef = useRef<HTMLElement>(null)
   const testimonialsRef = useRef<HTMLElement>(null)
   const contactRef = useRef<HTMLElement>(null)
+  const [menuOpen, setMenuOpen] = useState(false)
 
   const scrollToSection = (ref: React.RefObject<HTMLElement>) => {
     ref.current?.scrollIntoView({ behavior: 'smooth' })
+    setMenuOpen(false)
   }
 
   return (
     <div className="min-h-screen bg-[#121212] text-white font-sans relative overflow-hidden">
-      {/* Flying icons */}
+      {/* Flying icons and decorative elements */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-1/4 left-1/4 animate-float">
           <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-            {/* Replace with your Instagram SVG path */}
             <path d="M16 0C7.16344 0 0 7.16344 0 16C0 24.8366 7.16344 32 16 32C24.8366 32 32 24.8366 32 16C32 7.16344 24.8366 0 16 0Z" fill="#9333EA" fillOpacity="0.2"/>
           </svg>
         </div>
-        {/* Add more SVG icons here */}
+        <div className="absolute top-3/4 right-1/4 animate-float-delay-1">
+          <svg width="48" height="4" viewBox="0 0 48 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="48" height="4" rx="2" fill="#9333EA" fillOpacity="0.2"/>
+          </svg>
+        </div>
+        <div className="absolute top-1/2 left-3/4 animate-float-delay-2">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="12" cy="12" r="11" stroke="#9333EA" strokeWidth="2" strokeOpacity="0.2"/>
+          </svg>
+        </div>
+        <div className="absolute top-1/3 right-1/3 animate-float-delay-3">
+          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20 0L24.4903 15.5097L40 20L24.4903 24.4903L20 40L15.5097 24.4903L0 20L15.5097 15.5097L20 0Z" fill="#9333EA" fillOpacity="0.2"/>
+          </svg>
+        </div>
       </div>
 
-      <header className="container mx-auto px-6 py-6 flex flex-col md:flex-row justify-between items-center relative z-10">
-        <div className="flex items-center space-x-2 mb-4 md:mb-0">
+      <header className="container mx-auto px-6 py-6 flex justify-between items-center relative z-10">
+        <div className="flex items-center space-x-2">
           <div className="w-8 h-8 bg-purple-600 rounded-full"></div>
           <span className="font-semibold text-sm md:text-base font-montserrat">Luan Chicale Studio</span>
         </div>
-        <nav className="flex flex-wrap justify-center md:justify-end space-x-4 md:space-x-8">
+        <nav className="hidden md:flex space-x-8">
           <button onClick={() => scrollToSection(servicesRef)} className="text-gray-400 hover:text-purple-600 text-sm md:text-base font-nunito transition-colors duration-300">Serviços</button>
           <button onClick={() => scrollToSection(testimonialsRef)} className="text-gray-400 hover:text-purple-600 text-sm md:text-base font-nunito transition-colors duration-300">Referências</button>
           <button onClick={() => scrollToSection(contactRef)} className="text-gray-400 hover:text-purple-600 text-sm md:text-base font-nunito transition-colors duration-300">Contato</button>
         </nav>
-        <button className="mt-4 md:mt-0 bg-transparent text-white px-4 py-2 rounded-md text-sm md:text-base font-medium font-nunito border border-purple-600 hover:bg-purple-600 transition-colors duration-300">
+        <button className="bg-transparent text-white px-4 py-2 rounded-md text-sm md:text-base font-medium font-nunito border border-purple-600 hover:bg-purple-600 transition-colors duration-300">
           Fale conosco agora
         </button>
+        <button className="md:hidden" onClick={() => setMenuOpen(!menuOpen)}>
+          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
       </header>
+
+      {menuOpen && (
+        <div className="md:hidden bg-[#1E1E1E] p-4">
+          <button onClick={() => scrollToSection(servicesRef)} className="block w-full text-left py-2 text-gray-400 hover:text-purple-600 text-base font-nunito transition-colors duration-300">Serviços</button>
+          <button onClick={() => scrollToSection(testimonialsRef)} className="block w-full text-left py-2 text-gray-400 hover:text-purple-600 text-base font-nunito transition-colors duration-300">Referências</button>
+          <button onClick={() => scrollToSection(contactRef)} className="block w-full text-left py-2 text-gray-400 hover:text-purple-600 text-base font-nunito transition-colors duration-300">Contato</button>
+        </div>
+      )}
 
       <main className="pb-20 relative z-10">
         <section className="container mx-auto px-6 pt-20 pb-32">
@@ -53,7 +81,6 @@ const Home: NextPage = () => {
               <button className="bg-transparent text-white px-6 py-3 rounded-md text-base md:text-lg font-medium flex items-center font-nunito border border-purple-600 hover:bg-purple-600 transition-colors duration-300">
                 Saiba mais
                 <svg className="ml-2 w-5 h-5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  {/* Replace with your Play SVG path */}
                   <path d="M5 3L19 12L5 21V3Z" fill="currentColor"/>
                 </svg>
               </button>
@@ -62,7 +89,6 @@ const Home: NextPage = () => {
               <div className="bg-[#1E1E1E] p-4 rounded-lg mb-4 flex items-center max-w-md">
                 <div className="bg-purple-600 p-2 rounded mr-4 flex-shrink-0">
                   <svg className="w-6 h-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    {/* Replace with your Play SVG path */}
                     <path d="M5 3L19 12L5 21V3Z" fill="currentColor"/>
                   </svg>
                 </div>
@@ -74,7 +100,6 @@ const Home: NextPage = () => {
               <div className="bg-[#1E1E1E] p-4 rounded-lg flex items-center max-w-md">
                 <div className="bg-purple-600 p-2 rounded mr-4 flex-shrink-0">
                   <svg className="w-6 h-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    {/* Replace with your Play SVG path */}
                     <path d="M5 3L19 12L5 21V3Z" fill="currentColor"/>
                   </svg>
                 </div>
@@ -94,21 +119,18 @@ const Home: NextPage = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {[
                 { icon: <svg className="w-6 h-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    {/* Replace with your Smartphone SVG path */}
                     <path d="M17 2H7C5.89543 2 5 2.89543 5 4V20C5 21.1046 5.89543 22 7 22H17C18.1046 22 19 21.1046 19 20V4C19 2.89543 18.1046 2 17 2Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                   </svg>, 
                   title: "Na palma da sua mão", 
                   description: "Através do nosso suporte rápido, você pode mandar mensagem de qualquer lugar, sem se preocupar em ter um bom e-mail ou com seu horário. Nossa equipe responderá sempre que houver disponibilidade, e você pode escolher entre nos enviar um formulário, um e-mail ou até mesmo um WhatsApp. O que for mais fácil pra você, sera mais fácil pra nós tambem!" 
                 },
                 { icon: <svg className="w-6 h-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    {/* Replace with your PenTool SVG path */}
                     <path d="M12 19L19 12L22 15L15 22L12 19Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                   </svg>, 
                   title: "Na sua própria medida", 
                   description: "Com nossos planos fechados, oferecemos diferentes níveis de necessidade que podem te ajudar a alcançar o resultado desejado. Todos os nossos pacotes são pensados em necessidades mais comuns. Porém, isso não impede de trazer o melhor pra você! Caso não ache sua necessidade, criamos um pacote personalizado para atender suas necessidades." 
                 },
                 { icon: <svg className="w-6 h-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    {/* Replace with your Play SVG path */}
                     <path d="M5 3L19 12L5 21V3Z" fill="currentColor"/>
                   </svg>, 
                   title: "Movidos à excelência", 
@@ -128,32 +150,28 @@ const Home: NextPage = () => {
         </section>
 
         <section className="container mx-auto px-6 py-24">
-          <h2 className="text-3xl font-bold mb-16 flex items-center justify-center font-montserrat">
+          <h2 className="text-3xl font-bold mb-16 flex items-center justify-center font-montserrat text-center">
             O que oferecemos?
             <svg className="ml-4 w-6 h-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              {/* Replace with your Play SVG path */}
               <path d="M5 3L19 12L5 21V3Z" fill="currentColor"/>
             </svg>
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12">
             {[
               { icon: <svg className="w-8 h-8" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  {/* Replace with your Play SVG path */}
                   <path d="M5 3L19 12L5 21V3Z" fill="currentColor"/>
                 </svg>, 
                 title: 'Criação de Websites', 
                 description: 'Criamos uma landingpage ou site com a melhor qualidade para seu negócio.' 
               },
               { icon: <svg className="w-8 h-8" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  {/* Replace with your Mail SVG path */}
                   <path d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                   <path d="M22 6L12 13L2 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>, 
                 title: 'Marketing Digital', 
                 description: 'Ajudamos você a ser lembrado e impactar o seu nicho no digital.' 
               },
-              { icon: <svg className="w-8 h-8" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  {/* Replace with your Instagram SVG path */}
+              { icon: <svg className="w-8  h-8" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M17 2H7C4.23858 2 2 4.23858 2 7V17C2 19.7614 4.23858 22 7 22H17C19.7614 22 22 19.7614 22 17V7C22 4.23858 19.7614 2 17 2Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                   <path d="M16 11.37C16.1234 12.2022 15.9813 13.0522 15.5938 13.799C15.2063 14.5458 14.5931 15.1514 13.8416 15.5297C13.0901 15.9079 12.2384 16.0396 11.4078 15.9059C10.5771 15.7723 9.80976 15.3801 9.21484 14.7852C8.61992 14.1902 8.22773 13.4229 8.09406 12.5922C7.9604 11.7615 8.09206 10.9099 8.47032 10.1584C8.84858 9.40685 9.45418 8.79374 10.201 8.40624C10.9478 8.01874 11.7978 7.87658 12.63 8C13.4789 8.12588 14.2649 8.52146 14.8717 9.12831C15.4785 9.73515 15.8741 10.5211 16 11.37Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                   <path d="M17.5 6.5H17.51" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
@@ -161,9 +179,7 @@ const Home: NextPage = () => {
                 title: 'Webdesign (UX)', 
                 description: 'Criamos experiências incríveis para seu website ou plataforma.' 
               },
-              
               { icon: <svg className="w-8 h-8" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  {/* Replace with your Instagram SVG path */}
                   <path d="M17 2H7C4.23858 2 2 4.23858 2 7V17C2 19.7614 4.23858 22 7 22H17C19.7614 22 22 19.7614 22 17V7C22 4.23858 19.7614 2 17 2Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                   <path d="M16 11.37C16.1234 12.2022 15.9813 13.0522 15.5938 13.799C15.2063 14.5458 14.5931 15.1514 13.8416 15.5297C13.0901 15.9079 12.2384 16.0396 11.4078 15.9059C10.5771 15.7723 9.80976 15.3801 9.21484 14.7852C8.61992 14.1902 8.22773 13.4229 8.09406 12.5922C7.9604 11.7615 8.09206 10.9099 8.47032 10.1584C8.84858 9.40685 9.45418 8.79374 10.201 8.40624C10.9478 8.01874 11.7978 7.87658 12.63 8C13.4789 8.12588 14.2649 8.52146 14.8717 9.12831C15.4785 9.73515 15.8741 10.5211 16 11.37Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                   <path d="M17.5 6.5H17.51" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
@@ -172,7 +188,6 @@ const Home: NextPage = () => {
                 description: 'Gerenciamos, analisamos e produzimos tudo para você nas redes sociais.' 
               },
               { icon: <svg className="w-8 h-8" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  {/* Replace with your PenTool SVG path */}
                   <path d="M12 19L19 12L22 15L15 22L12 19Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                   <path d="M18 13L16.5 5.5L2 2L5.5 16.5L13 18L18 13Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                   <path d="M2 2L9.586 9.586" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
@@ -182,7 +197,6 @@ const Home: NextPage = () => {
                 description: 'Fazemos imagens criativas e chamativas para seu negócio.' 
               },
               { icon: <svg className="w-8 h-8" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  {/* Replace with your Video SVG path */}
                   <path d="M23 7L16 12L23 17V7Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                   <path d="M14 5H3C1.89543 5 1 5.89543 1 7V17C1 18.1046 1.89543 19 3 19H14C15.1046 19 16 18.1046 16 17V7C16 5.89543 15.1046 5 14 5Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>, 
@@ -190,20 +204,19 @@ const Home: NextPage = () => {
                 description: 'Tiramos sua imaginação do papel e ela se tornará realidade com a técnica correta.' 
               },
             ].map((service, index) => (
-              <div key={index} className="flex flex-col items-center text-center">
+              <div key={index} className="flex flex-col items-center text-center bg-[#1E1E1E] p-6 rounded-lg">
                 <div className="mb-4 text-purple-600">{service.icon}</div>
                 <h3 className="text-lg font-semibold mb-2 font-nunito">{service.title}</h3>
-                <p className="text-gray-400 text-sm font-nunito">{service.description}</p>
+                <p className="text-gray-400 text-sm font-nunito h-20 flex items-center justify-center">{service.description}</p>
               </div>
             ))}
           </div>
         </section>
 
-        <section className="container mx-auto px-6 py-24" ref={testimonialsRef}>
-          <h2 className="text-3xl font-bold mb-16 flex items-center justify-center font-montserrat">
+        <section className="container mx-auto px-6 py-24 mb-24" ref={testimonialsRef}>
+          <h2 className="text-3xl font-bold mb-16 flex items-center justify-center font-montserrat text-center">
             O que dizem sobre nós?
             <svg className="ml-4 w-6 h-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              {/* Replace with your Play SVG path */}
               <path d="M5 3L19 12L5 21V3Z" fill="currentColor"/>
             </svg>
           </h2>
@@ -249,12 +262,11 @@ const Home: NextPage = () => {
 
         <section className="bg-[#1E1E1E] py-24" ref={contactRef}>
           <div className="container mx-auto px-6">
-            <div className="flex flex-col md:flex-row items-center justify-between">
-              <h2 className="text-3xl md:text-4xl font-bold mb-8 md:mb-0 font-montserrat lg:w-1/2"> Transforme seus sonhos<br />em realidade</h2>
+            <div className="flex flex-col items-center text-center">
+              <h2 className="text-3xl md:text-4xl font-bold mb-8 font-montserrat"> Transforme seus sonhos<br />em realidade</h2>
               <button className="bg-purple-600 text-white px-8 py-3 rounded-md text-sm md:text-base font-medium inline-flex items-center font-nunito hover:bg-purple-700 transition-colors duration-300">
                 Nosso WhatsApp
                 <svg className="ml-2 w-4 h-4" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  {/* Replace with your Play SVG path */}
                   <path d="M5 3L19 12L5 21V3Z" fill="currentColor"/>
                 </svg>
               </button>
