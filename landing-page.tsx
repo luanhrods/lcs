@@ -5,6 +5,13 @@ import { Play, Instagram, Mail, Youtube, Smartphone, PenTool, Video } from 'luci
 export default function LandingPage() {
   return (
     <div className="min-h-screen bg-[#121212] text-white font-sans relative overflow-hidden">
+      {/* Smooth scroll behavior */}
+      <style jsx global>{`
+        html {
+          scroll-behavior: smooth;
+        }
+      `}</style>
+
       {/* Flying icons */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-1/4 left-1/4 animate-float">
@@ -44,7 +51,28 @@ export default function LandingPage() {
       </header>
 
       <main className="pb-20 relative z-10">
-        {/*... */}
+        {/* Seção de hero */}
+        <section id="hero" className="container mx-auto px-6 py-24">
+          <h1 className="text-6xl font-extrabold text-center font-montserrat">
+            Bem-vindo ao Luan Chicale Studio
+          </h1>
+        </section>
+
+        {/* Seção de serviços */}
+        <section id="services" className="container mx-auto px-6 py-24">
+          <h2 className="text-5xl font-extrabold mb-8 text-center font-montserrat">
+            O que oferecemos
+          </h2>
+          {/* Detalhes dos serviços */}
+        </section>
+
+        {/* Seção de referências */}
+        <section id="references" className="container mx-auto px-6 py-24">
+          <h2 className="text-5xl font-extrabold mb-8 text-center font-montserrat">
+            O que dizem sobre nós?
+          </h2>
+          {/* Detalhes das referências */}
+        </section>
 
         {/* Alteração na seção de contato */}
         <section id="contact" className="container mx-auto px-6 py-24">
@@ -60,8 +88,6 @@ export default function LandingPage() {
           </div>
         </section>
 
-        {/*... */}
-        
         <footer className="bg-[#1E1E1E] py-24">
           <div className="container mx-auto px-6">
             <div className="text-center md:text-left text-gray-400 text-lg font-nunito">
