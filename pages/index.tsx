@@ -180,7 +180,7 @@ const Home: NextPage = () => {
               <Link href="#" className="text-gray-400 hover:text-purple-600 text-sm font-nunito transition-colors duration-300">Política de Dados</Link>
             </nav>
           </div>
-          <div className="text-center sm:text-center text-gray-400 text-sm font-nunito">
+          <div className="text-center xs:text-center text-gray-400 text-sm font-nunito">
             © 2005-2024 LC Studio (Former ProjetoMidia)
           </div>
         </div>
