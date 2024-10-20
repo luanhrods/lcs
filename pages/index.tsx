@@ -247,7 +247,7 @@ const Home: NextPage = () => {
           </div>
         </section>
 
-        <section className="bg-[#1E1E1E] py-24" ref={contactRef}>
+        <section className="bg-[#1E1E1E] py-30" ref={contactRef}>
           <div className="container mx-auto px-6">
             <div className="flex flex-col md:flex-row items-center justify-between">
               <h2 className="text-3xl md:text-4xl font-bold mb-8 md:mb-0 font-montserrat md:w-1/2"> Transforme seus sonhos<br />em realidade</h2>
