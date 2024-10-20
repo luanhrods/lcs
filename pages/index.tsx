@@ -59,7 +59,7 @@ const Home: NextPage = () => {
                 <Play className="ml-2 w-4 h-4" />
               </button>
             </div>
-            <div className="md:w-1/2 relative mt-12 md:mt-0">
+            <div className="md:w-1/2 relative mt-6 md:mt-0">
               <div className="bg-[#1E1E1E] p-4 rounded-lg mb-6 flex items-center">
                 <div className="bg-purple-600 p-2 rounded mr-4">
                   <Play className="w-6 h-6" />
@@ -70,7 +70,7 @@ const Home: NextPage = () => {
                 </div>
               </div>
               <div className="bg-[#1E1E1E] p-4 rounded-lg flex items-center">
-                <div className="bg-purple-600 p-2 rounded mr-1">
+                <div className="bg-purple-600 p-2 rounded mr-4">
                   <Play className="w-6 h-6" />
                 </div>
                 <div>
