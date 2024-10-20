@@ -158,7 +158,7 @@ const Home: NextPage = () => {
 
         <section className="container mx-auto px-6 py-24">
           <div className="flex flex-col md:flex-row items-center justify-between">
-            <h2 className="text-4xl font-bold mb-8 md:mb-0 font-montserrat md:w-1/2"> Transforme seus sonhos<br />em realidade</h2>
+            <h2 className="text-4xl font-bold mb-8 md:mb-0 font-montserrat lg:w-1/2"> Transforme seus sonhos<br />em realidade</h2>
             <button className="bg-transparent text-white px-8 py-3 rounded-md text-sm font-medium inline-flex items-center font-nunito border border-purple-600 hover:bg-purple-600 transition-colors duration-300">
               Nosso WhatsApp
               <Play className="ml-2 w-4 h-4" />
