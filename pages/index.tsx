@@ -70,7 +70,7 @@ const Home: NextPage = () => {
                 </div>
               </div>
               <div className="bg-[#1E1E1E] p-4 rounded-lg flex items-center">
-                <div className="bg-purple-600 p-2 rounded mr-4">
+                <div className="bg-purple-600 p-2 rounded mr-1">
                   <Play className="w-6 h-6" />
                 </div>
                 <div>
