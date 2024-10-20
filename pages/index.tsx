@@ -48,37 +48,35 @@ const Home: NextPage = () => {
         <section className="container mx-auto px-6 pt-20 pb-32">
           <div className="flex flex-col md:flex-row items-start justify-between">
             <div className="md:w-1/2 mb-16 md:mb-0">
-              <h1 className="text-5xl font-bold mb-8 leading-tight font-montserrat">
+              <h1 className="text-6xl font-bold mb-8 leading-tight font-montserrat">
                 Construa<br />seus sonhos
               </h1>
-              <p className="text-gray-400 mb-12 text-lg max-w-md font-nunito">
+              <p className="text-gray-400 mb-12 text-xl max-w-md font-nunito">
                 O Luan Chicale Studio (LC Studio) é um local onde a criatividade e sonhos se tornam realidade. Transformamos seu negócio dos sonhos em realidade com o marketing digital.
               </p>
-              <button className="bg-transparent text-white px-6 py-3 rounded-md text-sm font-medium flex items-center font-nunito border border-purple-600 hover:bg-purple-600 transition-colors duration-300">
+              <button className="bg-transparent text-white px-6 py-3 rounded-md text-lg font-medium flex items-center font-nunito border border-purple-600 hover:bg-purple-600 transition-colors duration-300">
                 Saiba mais
-                <Play className="ml-2 w-4 h-4" />
+                <Play className="ml-2 w-5 h-5" />
               </button>
             </div>
-            <div className="md:w-1/2 relative mt-12 md:mt-0">
-              <div className="bg-[#1E1E1E] p-4 rounded-lg mb-4 flex items-center">
-                <div className="bg-purple-600 p-2 rounded mr-4">
+            <div className="md:w-1/2 relative mt-12 md:mt-0 md:pl-12">
+              <div className="bg-[#1E1E1E] p-4 rounded-lg mb-4 flex items-center max-w-md">
+                <div className="bg-purple-600 p-2 rounded mr-4 flex-shrink-0">
                   <Play className="w-6 h-6" />
                 </div>
                 <div>
-                  <h3 className="font-semibold font-nunito">Há mais de 5 anos</h3>
-                  <p className="text-sm text-gray-400 font-nunito">No mercado digital</p>
+                  <h3 className="font-semibold font-nunito text-lg">Há mais de 5 anos</h3>
+                  <p className="text-base text-gray-400 font-nunito">No mercado digital</p>
                 </div>
               </div>
-              <div className="bg-[#1E1E1E] p-4 rounded-lg flex items-center">
-                <div className="bg-purple-600 p-2 rounded mr-4">
+              <div className="bg-[#1E1E1E] p-4 rounded-lg flex items-center max-w-md">
+                <div className="bg-purple-600 p-2 rounded mr-4 flex-shrink-0">
                   <Play className="w-6 h-6" />
                 </div>
                 <div>
-                  <h3 className="font-semibold font-nunito">Alta excelência</h3>
-                  <p className="text-sm text-gray-400 font-nunito">
-                    Ofertando soluções de design e<br />
-                    marketing digital no Brasil, Canadá<br />
-                    e Estados Unidos da América.
+                  <h3 className="font-semibold font-nunito text-lg">Alta excelência</h3>
+                  <p className="text-base text-gray-400 font-nunito">
+                    Ofertando soluções de design e marketing digital no Brasil, Canadá e Estados Unidos da América.
                   </p>
                 </div>
               </div>
@@ -136,19 +134,37 @@ const Home: NextPage = () => {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 relative">
             {[
-              { offset: 'md:translate-y-0', image: '/placeholder.svg' },
-              { offset: 'md:translate-y-12', image: '/placeholder.svg' },
-              { offset: 'md:translate-y-24', image: '/placeholder.svg' },
+              { 
+                offset: 'md:translate-y-0', 
+                image: '/placeholder.svg',
+                text: "Luan trabalhou extremamente bem com nossa equipe e conseguiu concluir as tarefas sem comprometer a qualidade de seu trabalho. Ele ajudou nossa equipe no lançamento de várias campanhas para diversos clientes em diferentes setores na América do Norte.",
+                name: "Justin Lazorko",
+                position: "Diretor de Marketing da YourListingExpert"
+              },
+              { 
+                offset: 'md:translate-y-12', 
+                image: '/placeholder.svg',
+                text: "Eu com certeza adorei todo o profissionalismo e a gentileza em relação ao meu perfil. Aumentei minhas visualizações e consegui alcançar novos parceiros!",
+                name: "Thayse",
+                position: "Proprietária do perfil @eu.redecorando"
+              },
+              { 
+                offset: 'md:translate-y-24', 
+                image: '/placeholder.svg',
+                text: "O Luan tornou nosso YouTube muito mais fácil de apresentar para possíveis parceiros. Recomendamos ele sem dúvida e estamos ansiosos pelos próximos projetos.",
+                name: "Leonardo Phelipe",
+                position: "Fundador do zeroEleven Agency"
+              },
             ].map((item, index) => (
               <div key={index} className={`bg-[#1E1E1E] p-6 rounded-lg ${item.offset}`}>
                 <p className="text-gray-400 mb-4 text-sm font-nunito">
-                  Texto lindo e maravilhoso que vai ficar bem aqui para mostrar como seu cliente ficou feliz com nosso serviço e para mostrar que somos incríveis em duas linhas diferentes :)
+                  {item.text}
                 </p>
                 <div className="flex items-center">
                   <Image src={item.image} alt="Client" width={48} height={48} className="rounded-full mr-4" />
                   <div>
-                    <h4 className="font-semibold text-sm font-nunito">Justin Lazorko, Diretor de Marketing</h4>
-                    <p className="text-xs text-gray-400 font-nunito">da YourListingExpert</p>
+                    <h4 className="font-semibold text-sm font-nunito">{item.name}</h4>
+                    <p className="text-xs text-gray-400 font-nunito">{item.position}</p>
                   </div>
                 </div>
               </div>
@@ -169,19 +185,19 @@ const Home: NextPage = () => {
 
       <footer className="bg-[#1E1E1E] py-8">
         <div className="container mx-auto px-6">
-          <div className="flex flex-col md:flex-row justify-between items-center mb-4">
+          <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="flex items-center space-x-2 mb-4 md:mb-0">
               <div className="w-8 h-8 bg-purple-600 rounded-full"></div>
               <span className="font-semibold text-sm font-montserrat">LC Studio</span>
             </div>
-            <nav className="flex space-x-6">
+            <nav className="flex space-x-6 mb-4 md:mb-0">
               <Link href="#" className="text-gray-400 hover:text-purple-600 text-sm font-nunito transition-colors duration-300">Ajuda</Link>
               <Link href="#" className="text-gray-400 hover:text-purple-600 text-sm font-nunito transition-colors duration-300">Política de Privacidade</Link>
               <Link href="#" className="text-gray-400 hover:text-purple-600 text-sm font-nunito transition-colors duration-300">Política de Dados</Link>
             </nav>
-          </div>
-          <div className="text-center xs:text-center text-gray-400 text-sm font-nunito">
-            © 2005-2024 LC Studio (Former ProjetoMidia)
+            <div  className="text-gray-400 text-sm font-nunito">
+              © 2005-2024 LC Studio (Former ProjetoMidia)
+            </div>
           </div>
         </div>
       </footer>
