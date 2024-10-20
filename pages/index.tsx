@@ -42,7 +42,7 @@ const Home: NextPage = () => {
 
       <header className="container mx-auto px-6 py-6 flex justify-between items-center relative z-10">
         <div className="flex items-center space-x-2">
-          <div className="w-8 h-8 bg-purple-600 rounded-full"></div>
+          <Image src="/Luan Chicale Studio.svg" alt="Luan Chicale Studio Logo" width={40} height={40} />
           <span className="font-semibold text-sm md:text-base font-montserrat">Luan Chicale Studio</span>
         </div>
         <nav className="hidden md:flex space-x-8">
@@ -50,9 +50,9 @@ const Home: NextPage = () => {
           <button onClick={() => scrollToSection(testimonialsRef)} className="text-gray-400 hover:text-purple-600 text-sm md:text-base font-nunito transition-colors duration-300">Referências</button>
           <button onClick={() => scrollToSection(contactRef)} className="text-gray-400 hover:text-purple-600 text-sm md:text-base font-nunito transition-colors duration-300">Contato</button>
         </nav>
-        <button className="hidden md:block bg-transparent text-white px-4 py-2 rounded-md text-sm md:text-base font-medium font-nunito border border-purple-600 hover:bg-purple-600 transition-colors duration-300">
+        <Link href="https://tally.so/r/3qKJl7" className="hidden md:block bg-transparent text-white px-4 py-2 rounded-md text-sm md:text-base font-medium font-nunito border border-purple-600 hover:bg-purple-600 transition-colors duration-300">
           Fale conosco agora
-        </button>
+        </Link>
         <button className="md:hidden" onClick={() => setMenuOpen(!menuOpen)}>
           <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
@@ -72,9 +72,9 @@ const Home: NextPage = () => {
             <button onClick={() => scrollToSection(servicesRef)} className="block w-full text-left py-2 text-gray-400 hover:text-purple-600 text-base font-nunito transition-colors duration-300">Serviços</button>
             <button onClick={() => scrollToSection(testimonialsRef)} className="block w-full text-left py-2 text-gray-400 hover:text-purple-600 text-base font-nunito transition-colors duration-300">Referências</button>
             <button onClick={() => scrollToSection(contactRef)} className="block w-full text-left py-2 text-gray-400 hover:text-purple-600 text-base font-nunito transition-colors duration-300">Contato</button>
-            <button className="mt-4 w-full bg-transparent text-white px-4 py-2 rounded-md text-base font-medium font-nunito border border-purple-600 hover:bg-purple-600 transition-colors duration-300">
+            <Link href="https://tally.so/r/3qKJl7" className="mt-4 w-full bg-transparent text-white px-4 py-2 rounded-md text-base font-medium font-nunito border border-purple-600 hover:bg-purple-600 transition-colors duration-300">
               Fale conosco agora
-            </button>
+            </Link>
           </div>
         </div>
       </div>
@@ -89,12 +89,12 @@ const Home: NextPage = () => {
               <p className="text-gray-400 mb-12 text-lg md:text-xl max-w-md font-nunito">
                 O Luan Chicale Studio (LC Studio) é um local onde a criatividade e sonhos se tornam realidade. Transformamos seu negócio dos sonhos em realidade com o marketing digital.
               </p>
-              <button className="bg-transparent text-white px-6 py-3 rounded-md text-base md:text-lg font-medium flex items-center font-nunito border border-purple-600 hover:bg-purple-600 transition-colors duration-300">
+              <Link href="https://wa.me/5511962140166?text=Ea%C3%AD%20gente,%20tudo%20bem?%20Eu%20gostaria%20de%20saber%20mais%20sobre%20todos%20os%20servi%C3%A7os%20que%20voc%C3%AAs%20tem,%20por%20favor." className="bg-transparent text-white px-6 py-3 rounded-md text-base md:text-lg font-medium flex items-center font-nunito border border-purple-600 hover:bg-purple-600 transition-colors duration-300">
                 Saiba mais
                 <svg className="ml-2 w-5 h-5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M5 3L19 12L5 21V3Z" fill="currentColor"/>
                 </svg>
-              </button>
+              </Link>
             </div>
             <div className="md:w-1/2 relative mt-12 md:mt-0 md:pl-12">
               <div className="bg-[#1E1E1E] p-4 rounded-lg mb-4 flex items-center max-w-md">
@@ -163,22 +163,18 @@ const Home: NextPage = () => {
         <section className="container mx-auto px-6 py-24">
           <h2 className="text-3xl font-bold mb-16 flex items-center justify-center font-montserrat text-center">
             O que oferecemos?
-            <svg className="ml-4 w-6 h-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg className="ml-4 w-6 h-6" viewBox="0 0 24 24" fill="none" 
+xmlns="http://www.w3.org/2000/svg">
               <path d="M5 3L19 12L5 21V3Z" fill="currentColor"/>
             </svg>
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12">
             
             {[
-              { icon: <svg width="69" height="69" viewBox="0 0 69 69" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fillRule="evenodd" clipRule="evenodd" d="M34.5 69C53.5538 69 69 53.5538 69 34.5C69 15.4462 53.5538 0 34.5 0C15.4462 0 0 15.4462 0 34.5C0 53.5538 15.4462 69 34.5 69Z" fill="#5454D4" fillOpacity="0.1"/>
-                  <path d="M31.0004 35.3334C30.1204 35.7734 29.387 36.4267 28.8404 37.24C28.5337 37.7067 28.5337 38.2934 28.8404 38.76C29.387 39.5734 30.1204 40.2267 31.0004 40.6667" stroke="#5454D4" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                  <path d="M39.2803 35.3334C40.1603 35.7734 40.8936 36.4267 41.4403 37.24C41.7469 37.7067 41.7469 38.2934 41.4403 38.76C40.8936 39.5734 40.1603 40.2267 39.2803 40.6667" stroke="#5454D4" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                  <path d="M31.0003 47.3333H39.0003C45.667 47.3333 48.3337 44.6666 48.3337 38V30C48.3337 23.3333 45.667 20.6666 39.0003 20.6666H31.0003C24.3337 20.6666 21.667 23.3333 21.667 30V38C21.667 44.6666 24.3337 47.3333 31.0003 47.3333Z" stroke="#5454D4" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                  <path d="M21.9736 28.68L47.6003 28.6666" stroke="#5454D4" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                </svg>, 
+              { icon: <Image src="/YLE.svg" alt="Criação de Websites" width={69} height={69} />, 
                 title: 'Criação de Websites', 
-                description: 'Criamos uma landingpage ou site com a melhor qualidade para seu negócio.' 
+                description: 'Criamos uma landingpage ou site com a melhor qualidade para seu negócio.',
+                link: 'https://api.whatsapp.com/send?phone=5511962140166&text=Ea%C3%AD%20gente,%20tudo%20bem?%20Eu%20gostaria%20de%20saber%20mais%20sobre%20a%20Cria%C3%A7%C3%A3o%20de%20Websites.'
               },
               { icon: <svg width="69" height="69" viewBox="0 0 69 69" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fillRule="evenodd" clipRule="evenodd" d="M34.5 69C53.5538 69 69 53.5538 69 34.5C69 15.4462 53.5538 0 34.5 0C15.4462 0 0 15.4462 0 34.5C0 53.5538 15.4462 69 34.5 69Z" fill="#F04037" fillOpacity="0.1"/>
@@ -187,7 +183,8 @@ const Home: NextPage = () => {
                   <path d="M23 39.3334C23 40.5734 23.7333 41.6934 24.8667 42.2L33.92 46.2267C34.6133 46.5334 35.4 46.5334 36.08 46.2267L45.1333 42.2C46.2667 41.6934 47 40.5734 47 39.3334" stroke="#F04037" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>, 
                 title: 'Marketing Digital', 
-                description: 'Ajudamos você a ser lembrado e impactar o seu nicho no digital.' 
+                description: 'Ajudamos você a ser lembrado e impactar o seu nicho no digital.',
+                link: 'https://api.whatsapp.com/send?phone=5511962140166&text=Ea%C3%AD%20gente,%20tudo%20bem?%20Eu%20gostaria%20de%20saber%20mais%20sobre%20o%20Marketing%20Digital.'
               },
               { icon: <svg width="69" height="69" viewBox="0 0 69 69" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fillRule="evenodd" clipRule="evenodd" d="M34.5 69C53.5538 69 69 53.5538 69 34.5C69 15.4462 53.5538 0 34.5 0C15.4462 0 0 15.4462 0 34.5C0 53.5538 15.4462 69 34.5 69Z" fill="#FEDC5A" fillOpacity="0.1"/>
@@ -197,7 +194,8 @@ const Home: NextPage = () => {
                   <path d="M21.9736 28.68L47.6003 28.6666" stroke="#FEDC5A" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>, 
                 title: 'Webdesign (UX)', 
-                description: 'Criamos experiências incríveis para seu website ou plataforma.' 
+                description: 'Criamos experiências incríveis para seu website ou plataforma.',
+                link: 'https://wa.me/5511962140166?text=Ea%C3%AD%20gente,%20tudo%20bem?%20Eu%20gostaria%20de%20saber%20mais%20sobre%20Webdesign%20e%20UX/UI.'
               },
               { icon: <svg width="69" height="69" viewBox="0 0 69 69" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fillRule="evenodd" clipRule="evenodd" d="M34.5 69C53.5538 69 69 53.5538 69 34.5C69 15.4462 53.5538 0 34.5 0C15.4462 0 0 15.4462 0 34.5C0 53.5538 15.4462 69 34.5 69Z" fill="#FEDC5A" fillOpacity="0.1"/>
@@ -208,30 +206,25 @@ const Home: NextPage = () => {
                   <path d="M35 20.6666V24.2533" stroke="#292D32" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>, 
                 title: 'Mídias Sociais', 
-                description: 'Gerenciamos, analisamos e produzimos tudo para você nas redes sociais.' 
+                description: 'Gerenciamos, analisamos e produzimos tudo para você nas redes sociais.',
+                link: 'https://wa.me/5511962140166?text=Ea%C3%AD%20gente,%20tudo%20bem?%20Eu%20gostaria%20de%20saber%20mais%20sobre%20as%20m%C3%ADdias%20sociais'
               },
-              { icon: <svg className="w-8 h-8" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M12 19L19 12L22 15L15 22L12 19Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                  <path d="M18 13L16.5 5.5L2 2L5.5 16.5L13 18L18 13Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                  <path d="M2 2L9.586 9.586" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                  <path d="M11 13C12.1046 13 13 12.1046 13 11C13 9.89543 12.1046 9 11 9C9.89543 9 9 9.89543 9 11C9 12.1046 9.89543 13 11 13Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                </svg>, 
+              { icon: <Image src="/Design Gráfico.svg" alt="Design Gráfico" width={69} height={69} />, 
                 title: 'Design Gráfico', 
-                description: 'Fazemos imagens criativas e chamativas para seu negócio.' 
+                description: 'Fazemos imagens criativas e chamativas para seu negócio.',
+                link: 'https://wa.me/5511962140166?text=Ea%C3%AD%20gente,%20tudo%20bem?%20Eu%20gostaria%20de%20saber%20mais%20sobre%20design%20gr%C3%A1fico.'
               },
-              { icon: <svg className="w-8 h-8" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M23 7L16 12L23 17V7Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                  <path d="M14 5H3C1.89543 5 1 5.89543 1 7V17C1 18.1046 1.89543 19 3 19H14C15.1046 19 16 18.1046 16 17V7C16 5.89543 15.1046 5 14 5Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                </svg>, 
+              { icon: <Image src="/Edição de Vídeos.svg" alt="Edição de vídeos" width={69} height={69} />, 
                 title: 'Edição de vídeos', 
-                description: 'Tiramos sua imaginação do papel e ela se tornará realidade com a técnica correta.' 
+                description: 'Tiramos sua imaginação do papel e ela se tornará realidade com a técnica correta.',
+                link: 'https://wa.me/5511962140166?text=Ea%C3%AD%20gente,%20tudo%20bem?%20Eu%20gostaria%20de%20saber%20mais%20sobre%20Edi%C3%A7%C3%A3o%20de%20V%C3%ADdeos.'
               },
             ].map((service, index) => (
-              <div key={index} className="flex flex-col items-center text-center bg-[#1E1E1E] p-6 rounded-lg">
+              <Link href={service.link} key={index} className="flex flex-col items-center text-center bg-[#1E1E1E] p-6 rounded-lg">
                 <div className="mb-4 text-purple-600">{service.icon}</div>
                 <h3 className="text-lg font-semibold mb-2 font-nunito">{service.title}</h3>
                 <p className="text-gray-400 text-sm font-nunito h-20 flex items-center justify-center">{service.description}</p>
-              </div>
+              </Link>
             ))}
           </div>
         </section>
@@ -247,21 +240,21 @@ const Home: NextPage = () => {
             {[
               { 
                 offset: 'md:translate-y-0', 
-                image: '/placeholder.svg',
+                image: '/placeholder.svg?height=48&width=48',
                 text: "Luan trabalhou extremamente bem com nossa equipe e conseguiu concluir as tarefas sem comprometer a qualidade de seu trabalho. Ele ajudou nossa equipe no lançamento de várias campanhas para diversos clientes em diferentes setores na América do Norte.",
                 name: "Justin Lazorko",
                 position: "Diretor de Marketing da YourListingExpert"
               },
               { 
                 offset: 'md:translate-y-12', 
-                image: '/placeholder.svg',
+                image: '/euredecorando.svg',
                 text: "Eu com certeza adorei todo o profissionalismo e a gentileza em relação ao meu perfil. Aumentei minhas visualizações e consegui alcançar novos parceiros!",
                 name: "Thayse",
                 position: "Proprietária do perfil @eu.redecorando"
               },
               { 
                 offset: 'md:translate-y-24', 
-                image: '/placeholder.svg',
+                image: '/placeholder.svg?height=48&width=48',
                 text: "O Luan tornou nosso YouTube muito mais fácil de apresentar para possíveis parceiros. Recomendamos ele sem dúvida e estamos ansiosos pelos próximos projetos.",
                 name: "Leonar do Phelipe",
                 position: "Fundador do zeroEleven Agency"
@@ -287,12 +280,13 @@ const Home: NextPage = () => {
           <div className="container mx-auto px-6">
             <div className="flex flex-col md:flex-row items-center justify-between">
               <h2 className="text-3xl md:text-4xl font-bold mb-8 md:mb-0 font-montserrat md:w-1/2 text-center md:text-left"> Transforme seus sonhos<br />em realidade</h2>
-              <button className="bg-purple-600 text-white px-8 py-3 rounded-md text-sm md:text-base font-medium inline-flex items-center font-nunito hover:bg-purple-700 transition-colors duration-300">
+              <Link href="https://wa.me/5511962140166?text=Ea%C3%AD%20gente,%20tudo%20bem?%20Eu%20gostaria%20de%20saber%20mais%20sobre%20todos%20os%20servi%C3%A7os%20que%20voc%C3%AAs%20tem,%20por%20favor."
+                className="bg-purple-600 text-white px-8 py-3 rounded-md text-sm md:text-base font-medium inline-flex items-center font-nunito hover:bg-purple-700 transition-colors duration-300">
                 Nosso WhatsApp
                 <svg className="ml-2 w-4 h-4" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M5 3L19 12L5 21V3Z" fill="currentColor"/>
                 </svg>
-              </button>
+              </Link>
             </div>
           </div>
         </section>
@@ -302,13 +296,13 @@ const Home: NextPage = () => {
         <div className="container mx-auto px-6">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="flex items-center space-x-2 mb-4 md:mb-0">
-              <div className="w-8 h-8 bg-purple-600 rounded-full"></div>
+              <Image src="/Luan Chicale Studio.svg" alt="LC Studio Logo" width={32} height={32} />
               <span className="font-semibold text-sm font-montserrat">LC Studio</span>
             </div>
             <nav className="flex flex-wrap justify-center space-x-4 md:space-x-6 mb-4 md:mb-0">
-              <Link href="#" className="text-gray-400 hover:text-purple-600 text-sm font-nunito transition-colors duration-300">Ajuda</Link>
-              <Link href="#" className="text-gray-400 hover:text-purple-600 text-sm font-nunito transition-colors duration-300">Política de Privacidade</Link>
-              <Link href="#" className="text-gray-400 hover:text-purple-600 text-sm font-nunito transition-colors duration-300">Política de Dados</Link>
+              <Link href="https://tally.so/r/3qKJl7" className="text-gray-400 hover:text-purple-600 text-sm font-nunito transition-colors duration-300">Ajuda</Link>
+              <Link href="https://tally.so/r/w4N4Qk" className="text-gray-400 hover:text-purple-600 text-sm font-nunito transition-colors duration-300">Política de Privacidade</Link>
+              <Link href="https://tally.so/r/w4N4Qk" className="text-gray-400 hover:text-purple-600 text-sm font-nunito transition-colors duration-300">Política de Dados</Link>
             </nav>
             <div className="text-gray-400 text-sm font-nunito">
               © 2005-2024 LC Studio (Former ProjetoMidia)
