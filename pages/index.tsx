@@ -147,8 +147,8 @@ const Home: NextPage = () => {
                 <div className="flex items-center">
                   <Image src={item.image} alt="Client" width={48} height={48} className="rounded-full mr-4" />
                   <div>
-                    <h4 className="font-semibold text-sm font-nunito">Justin Loureiro, Diretor de Marketing</h4>
-                    <p className="text-xs text-gray-400 font-nunito">da YourLittleGiant</p>
+                    <h4 className="font-semibold text-sm font-nunito">Justin Lazorko, Diretor de Marketing</h4>
+                    <p className="text-xs text-gray-400 font-nunito">da YourListingExpert</p>
                   </div>
                 </div>
               </div>
@@ -158,7 +158,8 @@ const Home: NextPage = () => {
 
         <section className="container mx-auto px-6 py-24">
           <div className="flex flex-col md:flex-row items-center justify-between">
-            <h2 className="text-4xl font-bold mb-8 md:mb-0 font-montserrat md:w-1/2">Transforme seu sonho em realidade.</h2>
+            <h2 className="text-4xl font-bold mb-8 md:mb-0 font-montserrat md:w-1/2">Transforme seu sonho 
+              em realidade.</h2>
             <button className="bg-transparent text-white px-8 py-3 rounded-md text-sm font-medium inline-flex items-center font-nunito border border-purple-600 hover:bg-purple-600 transition-colors duration-300">
               Nosso WhatsApp
               <Play className="ml-2 w-4 h-4" />
@@ -181,7 +182,7 @@ const Home: NextPage = () => {
             </nav>
           </div>
           <div className="text-center md:text-left text-gray-400 text-xs font-nunito">
-            © 2024 Luan Chicale Studio
+            © 2005-2024 LC Studio (Former ProjetoMidia)
           </div>
         </div>
       </footer>
