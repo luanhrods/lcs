@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+section {
+    padding: 20px;
+    margin: 10px 0;
+}
+
+#landing {
+    text-align: center;
+}
+
+#landing h1 {
+    font-size: 2.6em; /* Aumentado para 1.3x */
+}
+
+#landing p {
+    font-size: 1.3em; /* Aumentado para 1.3x */
+}
+
+.bloco {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.bloco-cinza {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px;
+    width: 80%; /* Ajustado para tornar a parte cinza menor */
+}
+
+h2, h3 {
+    font-size: 1.5em; /* Aumentando títulos para 1.3x */
+}
