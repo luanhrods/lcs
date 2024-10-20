@@ -19,8 +19,3 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
-
-.container {
-  max-width: 100%;
-  margin: auto;
-}
