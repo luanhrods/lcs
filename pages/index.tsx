@@ -60,13 +60,13 @@ const Home: NextPage = () => {
               </button>
             </div>
             <div className="md:w-1/2 relative mt-12 md:mt-0">
-              <div className="bg-[#1E1E1E] p-4 rounded-lg mb-6 flex items-center">
+              <div className="bg-[#1E1E1E] p-5 rounded-lg mb-6 flex items-center">
                 <div className="bg-purple-600 p-2 rounded mr-4">
                   <Play className="w-6 h-6" />
                 </div>
                 <div>
                   <h3 className="font-semibold font-nunito">Há mais de 5 anos</h3>
-                  <p className="text-sm text-gray-400 font-nunito">No mercado digital</p>
+                  <p className="text-md text-gray-400 font-nunito">No mercado digital</p>
                 </div>
               </div>
               <div className="bg-[#1E1E1E] p-4 rounded-lg flex items-center">
@@ -75,7 +75,7 @@ const Home: NextPage = () => {
                 </div>
                 <div>
                   <h3 className="font-semibold font-nunito">Alta excelência</h3>
-                  <p className="text-sm text-gray-400 font-nunito">
+                  <p className="text-md text-gray-400 font-nunito">
                     Ofertando soluções de design e<br />
                     marketing digital no Brasil, Canadá<br />
                     e Estados Unidos da América.
