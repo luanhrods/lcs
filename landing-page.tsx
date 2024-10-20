@@ -66,7 +66,7 @@ export default function LandingPage() {
         <footer className="bg-[#1E1E1E] py-24">
           <div className="container mx-auto px-6">
             <div className="text-center md:text-left text-gray-400 text-lg font-nunito">
-              &copy; 2024 Luan Chicale Studio
+              &copy; 2005-2024 LC Studio by Projeto Mídia
             </div>
           </div>
         </footer>
