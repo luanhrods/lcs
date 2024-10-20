@@ -20,7 +20,7 @@ body {
     rgb(var(--background-start-rgb));
 }
 
-/* Adicionando rolagem suave ao site */
+/* Adiciona um estilo suave à transição de rolagem */
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth; /* Para navegadores que suportam essa propriedade */
 }
