@@ -49,7 +49,8 @@ export default function LandingPage() {
         <section id="contact" className="container mx-auto px-6 py-24">
           <div className="flex flex-col md:flex-row items-center justify-between">
             <h2 className="text-6xl font-extrabold mb-8 md:mb-0 font-montserrat">
-              Transforme seu sonho <br> em realidade
+              Transforme seu sonho
+              em realidade
             </h2>
             <button className="bg-purple-600 text-white px-8 py-3 rounded-md text-lg font-medium inline-flex items-center font-nunito hover:bg-purple-700 transition-colors duration-300">
               Nosso WhatsApp
