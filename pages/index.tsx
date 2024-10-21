@@ -226,21 +226,21 @@ const Home: NextPage = () => {
                 offset: 'md:translate-y-0', 
                 image: '/images/testimonials/testimonial1.png',
                 text: "Luan trabalhou extremamente bem com nossa equipe e conseguiu concluir as tarefas sem comprometer a qualidade de seu trabalho. Ele ajudou nossa equipe no lançamento de várias campanhas para diversos clientes em diferentes setores na América do Norte.",
-                name: "Justin Lazorko",
+                name: "- Justin Lazorko",
                 position: "Diretor de Marketing da YourListingExpert"
               },
               { 
                 offset: 'md:translate-y-12', 
                 image: '/images/testimonials/testimonial2.png',
                 text: "Eu com certeza adorei todo o profissionalismo e a gentileza em relação ao meu perfil. Aumentei minhas visualizações e consegui alcançar novos parceiros!",
-                name: "Thayse",
+                name: "- Thayse Rodrigues",
                 position: "Proprietária do perfil @eu.redecorando"
               },
               { 
                 offset: 'md:translate-y-24', 
                 image: '/images/testimonials/testimonial3.png',
                 text: "O Luan tornou nosso YouTube muito mais fácil de apresentar para possíveis parceiros. Recomendamos ele sem dúvida e estamos ansiosos pelos próximos projetos.",
-                name: "Leonar do Phelipe",
+                name: "- Leonardo Phelipe",
                 position: "Fundador do zeroEleven Agency"
               },
             ].map((item, index) => (
@@ -289,7 +289,7 @@ const Home: NextPage = () => {
               <Link href="https://tally.so/r/w4N4Qk" className="text-gray-400 hover:text-purple-600 text-sm font-nunito transition-colors duration-300">Política de Dados</Link>
             </nav>
             <div className="text-gray-400 text-sm font-nunito">
-              © 2005-2024 LC Studio (Former ProjetoMidia)
+              © 2005-2024 LC Studio (Formerly ProjetoMidia)
             </div>
           </div>
         </div>
