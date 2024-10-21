@@ -89,9 +89,10 @@ const Home: NextPage = () => {
               <p className="text-gray-400 mb-12 text-lg md:text-xl max-w-md font-nunito">
                 O Luan Chicale Studio (LC Studio) é um local onde a criatividade e sonhos se tornam realidade. Transformamos seu negócio dos sonhos em realidade com o marketing digital.
               </p>
-              <Link href="https://wa.me/5511962140166?text=Ea%C3%AD%20gente,%20tudo%20bem?%20Eu%20gostaria%20de%20saber%20mais%20sobre%20todos%20os%20servi%C3%A7os%20que%20voc%C3%AAs%20tem,%20por%20favor." className="bg-transparent text-white px-4 py-2 rounded-md text-sm md:text-lg font-medium flex items-center font-nunito border border-purple-600 hover:bg-purple-600 transition-colors duration-300 w-full md:w-auto justify-center md:justify-start">
+              <Link href="https://wa.me/5511962140166?text=Ea%C3%AD%20gente,%20tudo%20bem?%20Eu%20gostaria%20de%20saber%20mais%20sobre%20todos%20os%20servi%C3%A7os%20que%20voc%C3%AAs%20tem,%20por%20favor." 
+                className="bg-transparent text-white px-6 py-3 rounded-md text-base font-medium inline-flex items-center font-nunito border border-purple-600 hover:bg-purple-600 transition-colors duration-300 md:px-4 md:py-2 md:text-sm">
                 Saiba mais
-                <svg className="ml-2 w-5 h-5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg className="ml-2 w-4 h-4 md:w-3 md:h-3" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M5 3L19 12L5 21V3Z" fill="currentColor"/>
                 </svg>
               </Link>
@@ -153,7 +154,7 @@ const Home: NextPage = () => {
                     {item.icon}
                   </div>
                   <h3 className="text-xl font-semibold mb-4 font-inter">{item.title}</h3>
-                  <p className="text-gray-400 text-sm font-inter  font-normal">{item.description}</p>
+                  <p className="text-gray-400 text-sm font-inter font-normal">{item.description}</p>
                 </div>
               ))}
             </div>
@@ -162,6 +163,7 @@ const Home: NextPage = () => {
 
         <section className="container mx-auto px-6 py-24">
           <h2 className="text-3xl font-bold mb-16 flex items-center justify-center font-montserrat text-center">
+            
             O que oferecemos?
             <svg className="ml-4 w-6 h-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M5 3L19 12L5 21V3Z" fill="currentColor"/>
@@ -242,15 +244,15 @@ const Home: NextPage = () => {
                 position: "Fundador do zeroEleven Agency"
               },
             ].map((item, index) => (
-              <div key={index} className={`bg-[#1E1E1E] p-6 rounded-lg ${item.offset}`}>
-                <p className="text-gray-400 mb-4 text-sm font-nunito">
+              <div key={index} className={`bg-[#1E1E1E] p-8 rounded-lg ${item.offset} transition-all duration-300 ease-in-out`}>
+                <p className="text-gray-400 mb-6 text-base font-nunito">
                   {item.text}
                 </p>
                 <div className="flex items-center">
-                  <Image src={item.image} alt={item.name} width={48} height={48} className="rounded-full mr-4" />
+                  <Image src={item.image} alt={item.name} width={64} height={64} className="rounded-full mr-4" />
                   <div>
-                    <h4 className="font-semibold text-sm font-nunito">{item.name}</h4>
-                    <p className="text-xs text-gray-400 font-nunito">{item.position}</p>
+                    <h4 className="font-semibold text-base font-nunito">{item.name}</h4>
+                    <p className="text-sm text-gray-400 font-nunito">{item.position}</p>
                   </div>
                 </div>
               </div>
