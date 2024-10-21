@@ -42,7 +42,9 @@ const Home: NextPage = () => {
 
       <header className="container mx-auto px-6 py-6 flex justify-between items-center relative z-10">
         <div className="flex items-center space-x-2">
-          <Image src="/Luan Chicale Studio.svg" alt="Luan Chicale Studio Logo" width={40} height={40} />
+          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20 0L24.4903 15.5097L40 20L24.4903 24.4903L20 40L15.5097 24.4903L0 20L15.5097 15.5097L20 0Z" fill="#9333EA"/>
+          </svg>
           <span className="font-semibold text-sm md:text-base font-montserrat">Luan Chicale Studio</span>
         </div>
         <nav className="hidden md:flex space-x-8">
@@ -89,7 +91,7 @@ const Home: NextPage = () => {
               <p className="text-gray-400 mb-12 text-lg md:text-xl max-w-md font-nunito">
                 O Luan Chicale Studio (LC Studio) é um local onde a criatividade e sonhos se tornam realidade. Transformamos seu negócio dos sonhos em realidade com o marketing digital.
               </p>
-              <Link href="https://wa.me/5511962140166?text=Ea%C3%AD%20gente,%20tudo%20bem?%20Eu%20gostaria%20de%20saber%20mais%20sobre%20todos%20os%20servi%C3%A7os%20que%20voc%C3%AAs%20tem,%20por%20favor." className="bg-transparent text-white px-6 py-3 rounded-md text-base md:text-lg font-medium flex items-center font-nunito border border-purple-600 hover:bg-purple-600 transition-colors duration-300">
+              <Link href="https://wa.me/5511962140166?text=Ea%C3%AD%20gente,%20tudo%20bem?%20Eu%20gostaria%20de%20saber%20mais%20sobre%20todos%20os%20servi%C3%A7os%20que%20voc%C3%AAs%20tem,%20por%20favor." className="bg-transparent text-white px-6 py-3 rounded-md text-base md:text-lg font-medium flex items-center font-nunito border border-purple-600 hover:bg-purple-600 transition-colors duration-300 w-full md:w-auto justify-center md:justify-start">
                 Saiba mais
                 <svg className="ml-2 w-5 h-5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M5 3L19 12L5 21V3Z" fill="currentColor"/>
@@ -153,7 +155,7 @@ const Home: NextPage = () => {
                     {item.icon}
                   </div>
                   <h3 className="text-xl font-semibold mb-4 font-inter">{item.title}</h3>
-                  <p className="text-gray-400 text-sm font-inter font-normal">{item.description}</p>
+                  <p className="text-gray-400 text-sm font-inter  font-normal">{item.description}</p>
                 </div>
               ))}
             </div>
@@ -163,15 +165,20 @@ const Home: NextPage = () => {
         <section className="container mx-auto px-6 py-24">
           <h2 className="text-3xl font-bold mb-16 flex items-center justify-center font-montserrat text-center">
             O que oferecemos?
-            <svg className="ml-4 w-6 h-6" viewBox="0 0 24 24" fill="none" 
-xmlns="http://www.w3.org/2000/svg">
+            <svg className="ml-4 w-6 h-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M5 3L19 12L5 21V3Z" fill="currentColor"/>
             </svg>
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12">
             
             {[
-              { icon: <Image src="/YLE.svg" alt="Criação de Websites" width={69} height={69} />, 
+              { icon: <svg width="69" height="69" viewBox="0 0 69 69" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fillRule="evenodd" clipRule="evenodd" d="M34.5 69C53.5538 69 69 53.5538 69 34.5C69 15.4462 53.5538 0 34.5 0C15.4462 0 0 15.4462 0 34.5C0 53.5538 15.4462 69 34.5 69Z" fill="#55EFC4" fillOpacity="0.1"/>
+                  <path d="M47 28.3333V40.6666C47 45.3333 45.3333 47 40.6667 47H28.3333C23.6667 47 22 45.3333 22 40.6666V28.3333C22 23.6666 23.6667 22 28.3333 22H40.6667C45.3333 22 47 23.6666 47 28.3333Z" stroke="#55EFC4" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M31.6667 28.3334H37.3334" stroke="#55EFC4" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M34.5 40.6666V28.3333" stroke="#55EFC4" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M31.6667 40.6666H37.3334" stroke="#55EFC4" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>, 
                 title: 'Criação de Websites', 
                 description: 'Criamos uma landingpage ou site com a melhor qualidade para seu negócio.',
                 link: 'https://api.whatsapp.com/send?phone=5511962140166&text=Ea%C3%AD%20gente,%20tudo%20bem?%20Eu%20gostaria%20de%20saber%20mais%20sobre%20a%20Cria%C3%A7%C3%A3o%20de%20Websites.'
@@ -209,12 +216,24 @@ xmlns="http://www.w3.org/2000/svg">
                 description: 'Gerenciamos, analisamos e produzimos tudo para você nas redes sociais.',
                 link: 'https://wa.me/5511962140166?text=Ea%C3%AD%20gente,%20tudo%20bem?%20Eu%20gostaria%20de%20saber%20mais%20sobre%20as%20m%C3%ADdias%20sociais'
               },
-              { icon: <Image src="/Design Gráfico.svg" alt="Design Gráfico" width={69} height={69} />, 
+              { icon: <svg width="69" height="69" viewBox="0 0 69 69" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fillRule="evenodd" clipRule="evenodd" d="M34.5 69C53.5538 69 69 53.5538 69 34.5C69 15.4462 53.5538 0 34.5 0C15.4462 0 0 15.4462 0 34.5C0 53.5538 15.4462 69 34.5 69Z" fill="#55EFC4" fillOpacity="0.1"/>
+                  <path d="M34.5 47C41.4036 47 47 41.4036 47 34.5C47 27.5964 41.4036 22 34.5 22C27.5964 22 22 27.5964 22 34.5C22 41.4036 27.5964 47 34.5 47Z" stroke="#55EFC4" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M34.5 39.6667C37.3535 39.6667 39.6667 37.3535 39.6667 34.5C39.6667 31.6465 37.3535 29.3333 34.5 29.3333C31.6465 29.3333 29.3333 31.6465 29.3333 34.5C29.3333 37.3535 31.6465 39.6667 34.5 39.6667Z" stroke="#55EFC4" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M38.3333 31.1667L42.1667 27.3333" stroke="#55EFC4" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M26.8333 42.6667L30.6667 38.8333" stroke="#55EFC4" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M38.8333 38.3333L42.6667 42.1667" stroke="#55EFC4" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M26.8333 26.8333L30.6667 30.6667" stroke="#55EFC4" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>, 
                 title: 'Design Gráfico', 
                 description: 'Fazemos imagens criativas e chamativas para seu negócio.',
                 link: 'https://wa.me/5511962140166?text=Ea%C3%AD%20gente,%20tudo%20bem?%20Eu%20gostaria%20de%20saber%20mais%20sobre%20design%20gr%C3%A1fico.'
               },
-              { icon: <Image src="/Edição de Vídeos.svg" alt="Edição de vídeos" width={69} height={69} />, 
+              { icon: <svg width="69" height="69" viewBox="0 0 69 69" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fillRule="evenodd" clipRule="evenodd" d="M34.5 69C53.5538 69 69 53.5538 69 34.5C69 15.4462 53.5538 0 34.5 0C15.4462 0 0 15.4462 0 34.5C0 53.5538 15.4462 69 34.5 69Z" fill="#F04037" fillOpacity="0.1"/>
+                  <path d="M34.5 47C41.4036 47 47 41.4036 47 34.5C47 27.5964 41.4036 22 34.5 22C27.5964 22 22 27.5964 22 34.5C22 41.4036 27.5964 47 34.5 47Z" stroke="#F04037" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M31.1667 32.6667V38.8334L36.5 35.75L31.1667 32.6667Z" stroke="#F04037" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>, 
                 title: 'Edição de vídeos', 
                 description: 'Tiramos sua imaginação do papel e ela se tornará realidade com a técnica correta.',
                 link: 'https://wa.me/5511962140166?text=Ea%C3%AD%20gente,%20tudo%20bem?%20Eu%20gostaria%20de%20saber%20mais%20sobre%20Edi%C3%A7%C3%A3o%20de%20V%C3%ADdeos.'
@@ -296,7 +315,9 @@ xmlns="http://www.w3.org/2000/svg">
         <div className="container mx-auto px-6">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="flex items-center space-x-2 mb-4 md:mb-0">
-              <Image src="/Luan Chicale Studio.svg" alt="LC Studio Logo" width={32} height={32} />
+              <svg width="32" height="32" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20 0L24.4903 15.5097L40 20L24.4903 24.4903L20 40L15.5097 24.4903L0 20L15.5097 15.5097L20 0Z" fill="#9333EA"/>
+              </svg>
               <span className="font-semibold text-sm font-montserrat">LC Studio</span>
             </div>
             <nav className="flex flex-wrap justify-center space-x-4 md:space-x-6 mb-4 md:mb-0">
