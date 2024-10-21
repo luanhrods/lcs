@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { useRef, useState } from 'react'
 
-const Home: NextPage = () => {
+export default function Component() {
   const servicesRef = useRef<HTMLElement>(null)
   const testimonialsRef = useRef<HTMLElement>(null)
   const contactRef = useRef<HTMLElement>(null)
@@ -162,7 +162,7 @@ const Home: NextPage = () => {
         </section>
 
         <section className="container mx-auto px-6 py-24">
-          <h2 className="text-3xl font-bold mb-16 flex items-center justify-center font-montserrat text-center">
+          <h2 className="text-3xl font-bold mb-16 flex items-center justify-center  font-montserrat text-center">
             O que oferecemos?
             <svg  className="ml-4 w-6 h-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M5 3L19 12L5 21V3Z" fill="currentColor"/>
@@ -296,5 +296,3 @@ const Home: NextPage = () => {
     </div>
   )
 }
-
-export default Home
