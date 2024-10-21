@@ -287,7 +287,7 @@ const Home: NextPage = () => {
               <Link href="https://tally.so/r/w4N4Qk" className="text-gray-400 hover:text-purple-600 text-sm font-nunito transition-colors duration-300">Política de Dados</Link>
             </nav>
             <div className="text-gray-400 text-sm font-nunito">
-              © 2005-2024 LC Studio (Former ProjetoMidia)
+              © 2005-2024 LC Studio (Formerly ProjetoMidia)
             </div>
           </div>
         </div>
