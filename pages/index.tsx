@@ -2,6 +2,7 @@ import type { NextPage } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useRef, useState } from 'react'
+import { Smartphone, Ruler, Target } from 'lucide-react'
 
 export default function Component() {
   const servicesRef = useRef<HTMLElement>(null)
@@ -100,9 +101,7 @@ export default function Component() {
             <div className="md:w-1/2 relative mt-12 md:mt-0 md:pl-12">
               <div className="bg-[#1E1E1E] p-4 rounded-lg mb-4 flex items-center max-w-md">
                 <div className="bg-purple-600 p-2 rounded mr-4 flex-shrink-0">
-                  <svg className="w-6 h-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M5 3L19 12L5 21V3Z" fill="currentColor"/>
-                  </svg>
+                  <Smartphone className="w-6 h-6" />
                 </div>
                 <div>
                   <h3 className="font-semibold font-nunito text-lg">Há mais de 5 anos</h3>
@@ -111,9 +110,7 @@ export default function Component() {
               </div>
               <div className="bg-[#1E1E1E] p-4 rounded-lg flex items-center max-w-md">
                 <div className="bg-purple-600 p-2 rounded mr-4 flex-shrink-0">
-                  <svg className="w-6 h-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M5 3L19 12L5 21V3Z" fill="currentColor"/>
-                  </svg>
+                  <Target className="w-6 h-6" />
                 </div>
                 <div>
                   <h3 className="font-semibold font-nunito text-lg">Alta excelência</h3>
@@ -130,21 +127,15 @@ export default function Component() {
           <div className="container mx-auto px-6">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {[
-                { icon: <svg className="w-6 h-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M17 2H7C5.89543 2 5 2.89543 5 4V20C5 21.1046 5.89543 22 7 22H17C18.1046 22 19 21.1046 19 20V4C19 2.89543 18.1046 2 17 2Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                  </svg>, 
+                { icon: <Smartphone className="w-6 h-6" />, 
                   title: "Na palma da sua mão", 
                   description: "Através do nosso suporte rápido, você pode mandar mensagem de qualquer lugar, sem se preocupar em ter um bom e-mail ou com seu horário. Nossa equipe responderá sempre que houver disponibilidade, e você pode escolher entre nos enviar um formulário, um e-mail ou até mesmo um WhatsApp. O que for mais fácil pra você, sera mais fácil pra nós tambem!" 
                 },
-                { icon: <svg className="w-6 h-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M12 19L19 12L22 15L15 22L12 19Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                  </svg>, 
+                { icon: <Ruler className="w-6 h-6" />, 
                   title: "Na sua própria medida", 
                   description: "Com nossos planos fechados, oferecemos diferentes níveis de necessidade que podem te ajudar a alcançar o resultado desejado. Todos os nossos pacotes são pensados em necessidades mais comuns. Porém, isso não impede de trazer o melhor pra você! Caso não ache sua necessidade, criamos um pacote personalizado para atender suas necessidades." 
                 },
-                { icon: <svg className="w-6 h-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M5 3L19 12L5 21V3Z" fill="currentColor"/>
-                  </svg>, 
+                { icon: <Target className="w-6 h-6" />, 
                   title: "Movidos à excelência", 
                   description: "Quando dizemos que somos movidos à excelência significa que faremos tudo ao nosso alcance para atingir os resultados esperados, e não estamos sozinhos nessa. Juntamente aos colaboradores e parceiros da LC Studio, temos como ofertar todas suas necessidades com especialistas renomados no mercado, sempre na medida certa." 
                 },
@@ -162,9 +153,9 @@ export default function Component() {
         </section>
 
         <section className="container mx-auto px-6 py-24">
-          <h2 className="text-3xl font-bold mb-16 flex items-center justify-center  font-montserrat text-center">
+          <h2 className="text-3xl font-bold mb-16 flex items-center justify-center font-montserrat text-center">
             O que oferecemos?
-            <svg  className="ml-4 w-6 h-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg className="ml-4 w-6 h-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M5 3L19 12L5 21V3Z" fill="currentColor"/>
             </svg>
           </h2>
@@ -178,7 +169,7 @@ export default function Component() {
               { icon: '/images/services/marketing-digital.svg', 
                 title: 'Marketing Digital', 
                 description: 'Ajudamos você a ser lembrado e impactar o seu nicho no digital.',
-                link: 'https://api.whatsapp.com/send?phone=5511962140166&text=Ea%C3%AD%20gente,%20tudo%20bem?%20Eu%20gostaria%20de%20saber%20mais%20sobre%20o%20Marketing%20Digital.'
+                link:  'https://api.whatsapp.com/send?phone=5511962140166&text=Ea%C3%AD%20gente,%20tudo%20bem?%20Eu%20gostaria%20de%20saber%20mais%20sobre%20o%20Marketing%20Digital.'
               },
               { icon: '/images/services/webdesign.svg', 
                 title: 'Webdesign (UX)', 
