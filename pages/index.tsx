@@ -222,7 +222,7 @@ export default function Component() {
               { 
                 offset: 'md:translate-y-12', 
                 image: '/images/testimonials/testimonial2.png',
-                text: "Eu adorei todo o profissionalismo e a gentileza em relação ao meu perfil. Aumentei minhas visualizações e consegui alcançar novos parceiros. Me ajudaram a melhorar a qualdiade dos meus vídeos com dicas maravilhosas!!!",
+                text: "Eu adorei a atenção e gentileza que deram pro meu perfil... Aumentei minhas visualizações e consegui alcançar novos parceiros. Me ajudaram a melhorar a qualidade dos meus vídeos com dicas maravilhosas!!! Recomendo muito!!!",
                 name: "- Thayse Rodrigues",
                 position: "Proprietária do perfil @eu.redecorando"
               },
