@@ -105,7 +105,7 @@ export default function Component() {
                 </div>
                 <div>
                   <h3 className="font-semibold font-nunito text-lg">Há mais de 5 anos</h3>
-                  <p className="text-base text-gray-400 font-nunito">No mercado digital</p>
+                  <p className="text-base text-gray-400 font-nunito">Fazendo a diferença no o mercado digital</p>
                 </div>
               </div>
               <div className="bg-[#1E1E1E] p-4 rounded-lg flex items-center max-w-md">
@@ -115,7 +115,7 @@ export default function Component() {
                 <div>
                   <h3 className="font-semibold font-nunito text-lg">Alta excelência</h3>
                   <p className="text-base text-gray-400 font-nunito">
-                    Ofertando soluções de design e marketing digital no Brasil, Canadá e Estados Unidos da América.
+                    Ofertando soluções de design e marketing digital no Brasil, Canadá e Estados Unidos da América
                   </p>
                 </div>
               </div>
@@ -129,15 +129,15 @@ export default function Component() {
               {[
                 { icon: <Smartphone className="w-6 h-6" />, 
                   title: "Na palma da sua mão", 
-                  description: "Através do nosso suporte rápido, você pode mandar mensagem de qualquer lugar, sem se preocupar em ter um bom e-mail ou com seu horário. Nossa equipe responderá sempre que houver disponibilidade, e você pode escolher entre nos enviar um formulário, um e-mail ou até mesmo um WhatsApp. O que for mais fácil pra você, sera mais fácil pra nós tambem!" 
+                  description: "Através do nosso suporte rápido, você pode mandar mensagem de qualquer lugar, sem se preocupar em ter um bom e-mail ou com seu horário. Nossa equipe responderá sempre que houver disponibilidade, e você pode escolher entre nos enviar um formulário, um e-mail ou até mesmo um WhatsApp. O que for mais fácil pra você, será mais fácil pra nós tambem!" 
                 },
                 { icon: <Ruler className="w-6 h-6" />, 
                   title: "Na sua própria medida", 
-                  description: "Com nossos planos fechados, oferecemos diferentes níveis de necessidade que podem te ajudar a alcançar o resultado desejado. Todos os nossos pacotes são pensados em necessidades mais comuns. Porém, isso não impede de trazer o melhor pra você! Caso não ache sua necessidade, criamos um pacote personalizado para atender suas necessidades." 
+                  description: "Com nossos planos fechados, oferecemos diferentes níveis de necessidades, que podem te ajudar a alcançar o resultado desejado. Todos os nossos pacotes são pensados em necessidades mais comuns, porém isso não nos impede de trazer o melhor pra você! Caso não ache sua necessidade, criamos um pacote personalizado para atender você." 
                 },
                 { icon: <Target className="w-6 h-6" />, 
                   title: "Movidos à excelência", 
-                  description: "Quando dizemos que somos movidos à excelência significa que faremos tudo ao nosso alcance para atingir os resultados esperados, e não estamos sozinhos nessa. Juntamente aos colaboradores e parceiros da LC Studio, temos como ofertar todas suas necessidades com especialistas renomados no mercado, sempre na medida certa." 
+                  description: "Quando dizemos que somos movidos à excelência, isso significa que faremos tudo ao nosso alcance para atingir os resultados esperados. E não estamos sozinhos nessa. Juntamente aos colaboradores e parceiros do LC Studio, temos como ofertar todas suas necessidades com especialistas renomados no mercado, sempre na medida certa para o seu projeto." 
                 },
               ].map((item, index) => (
                 <div key={index} className="bg-[#252525] p-6 rounded-lg">
@@ -163,32 +163,32 @@ export default function Component() {
             {[
               { icon: '/images/services/criacao-websites.svg', 
                 title: 'Criação de Websites', 
-                description: 'Criamos uma landingpage ou site com a melhor qualidade para seu negócio.',
+                description: 'Criamos uma landingpage ou site com <br>a melhor qualidade para seu negócio.',
                 link: 'https://api.whatsapp.com/send?phone=5511962140166&text=Ea%C3%AD%20gente,%20tudo%20bem?%20Eu%20gostaria%20de%20saber%20mais%20sobre%20a%20Cria%C3%A7%C3%A3o%20de%20Websites.'
               },
               { icon: '/images/services/marketing-digital.svg', 
                 title: 'Marketing Digital', 
-                description: 'Ajudamos você a ser lembrado e impactar o seu nicho no digital.',
+                description: 'Ajudamos você a ser lembrado e <br>impactar o seu nicho no digital.',
                 link:  'https://api.whatsapp.com/send?phone=5511962140166&text=Ea%C3%AD%20gente,%20tudo%20bem?%20Eu%20gostaria%20de%20saber%20mais%20sobre%20o%20Marketing%20Digital.'
               },
               { icon: '/images/services/webdesign.svg', 
                 title: 'Webdesign (UX)', 
-                description: 'Criamos experiências incríveis para seu website ou plataforma.',
+                description: 'Criamos experiências incríveis para <br>seu website ou plataforma.',
                 link: 'https://wa.me/5511962140166?text=Ea%C3%AD%20gente,%20tudo%20bem?%20Eu%20gostaria%20de%20saber%20mais%20sobre%20Webdesign%20e%20UX/UI.'
               },
               { icon: '/images/services/midias-sociais.svg', 
                 title: 'Mídias Sociais', 
-                description: 'Gerenciamos, analisamos e produzimos tudo para você nas redes sociais.',
+                description: 'Gerenciamos, analisamos e produzimos tudo <br>para você nas redes sociais.',
                 link: 'https://wa.me/5511962140166?text=Ea%C3%AD%20gente,%20tudo%20bem?%20Eu%20gostaria%20de%20saber%20mais%20sobre%20as%20m%C3%ADdias%20sociais'
               },
               { icon: '/images/services/design-grafico.svg', 
                 title: 'Design Gráfico', 
-                description: 'Fazemos imagens criativas e chamativas para seu negócio.',
+                description: 'Fazemos imagens criativas e chamativas <br>para seu negócio.',
                 link: 'https://wa.me/5511962140166?text=Ea%C3%AD%20gente,%20tudo%20bem?%20Eu%20gostaria%20de%20saber%20mais%20sobre%20design%20gr%C3%A1fico.'
               },
               { icon: '/images/services/edicao-videos.svg', 
                 title: 'Edição de vídeos', 
-                description: 'Tiramos sua imaginação do papel e ela se tornará realidade com a técnica correta.',
+                description: 'Tiramos sua imaginação do papel e ela se tornará <br>realidade com a técnica correta.',
                 link: 'https://wa.me/5511962140166?text=Ea%C3%AD%20gente,%20tudo%20bem?%20Eu%20gostaria%20de%20saber%20mais%20sobre%20Edi%C3%A7%C3%A3o%20de%20V%C3%ADdeos.'
               },
             ].map((service, index) => (
