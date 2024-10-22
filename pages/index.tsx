@@ -163,32 +163,32 @@ export default function Component() {
             {[
               { icon: '/images/services/criacao-websites.svg', 
                 title: 'Criação de Websites', 
-                description: 'Criamos uma landingpage ou site com <br>a melhor qualidade para seu negócio.',
+                description: 'Criamos uma landingpage ou site com a melhor qualidade para seu negócio.',
                 link: 'https://api.whatsapp.com/send?phone=5511962140166&text=Ea%C3%AD%20gente,%20tudo%20bem?%20Eu%20gostaria%20de%20saber%20mais%20sobre%20a%20Cria%C3%A7%C3%A3o%20de%20Websites.'
               },
               { icon: '/images/services/marketing-digital.svg', 
                 title: 'Marketing Digital', 
-                description: 'Ajudamos você a ser lembrado e <br>impactar o seu nicho no digital.',
+                description: 'Ajudamos você a ser lembrado e impactar o seu nicho no digital.',
                 link:  'https://api.whatsapp.com/send?phone=5511962140166&text=Ea%C3%AD%20gente,%20tudo%20bem?%20Eu%20gostaria%20de%20saber%20mais%20sobre%20o%20Marketing%20Digital.'
               },
               { icon: '/images/services/webdesign.svg', 
                 title: 'Webdesign (UX)', 
-                description: 'Criamos experiências incríveis para <br>seu website ou plataforma.',
+                description: 'Criamos experiências incríveis para seu website ou plataforma.',
                 link: 'https://wa.me/5511962140166?text=Ea%C3%AD%20gente,%20tudo%20bem?%20Eu%20gostaria%20de%20saber%20mais%20sobre%20Webdesign%20e%20UX/UI.'
               },
               { icon: '/images/services/midias-sociais.svg', 
                 title: 'Mídias Sociais', 
-                description: 'Gerenciamos, analisamos e produzimos tudo <br>para você nas redes sociais.',
+                description: 'Gerenciamos, analisamos e produzimos tudo para você nas redes sociais.',
                 link: 'https://wa.me/5511962140166?text=Ea%C3%AD%20gente,%20tudo%20bem?%20Eu%20gostaria%20de%20saber%20mais%20sobre%20as%20m%C3%ADdias%20sociais'
               },
               { icon: '/images/services/design-grafico.svg', 
                 title: 'Design Gráfico', 
-                description: 'Fazemos imagens criativas e chamativas <br>para seu negócio.',
+                description: 'Fazemos imagens criativas e chamativas para seu negócio.',
                 link: 'https://wa.me/5511962140166?text=Ea%C3%AD%20gente,%20tudo%20bem?%20Eu%20gostaria%20de%20saber%20mais%20sobre%20design%20gr%C3%A1fico.'
               },
               { icon: '/images/services/edicao-videos.svg', 
                 title: 'Edição de vídeos', 
-                description: 'Tiramos sua imaginação do papel e ela se tornará <br>realidade com a técnica correta.',
+                description: 'Tiramos sua imaginação do papel e ela se tornará realidade com a técnica correta.',
                 link: 'https://wa.me/5511962140166?text=Ea%C3%AD%20gente,%20tudo%20bem?%20Eu%20gostaria%20de%20saber%20mais%20sobre%20Edi%C3%A7%C3%A3o%20de%20V%C3%ADdeos.'
               },
             ].map((service, index) => (
@@ -222,14 +222,14 @@ export default function Component() {
               { 
                 offset: 'md:translate-y-12', 
                 image: '/images/testimonials/testimonial2.png',
-                text: "Eu com certeza adorei todo o profissionalismo e a gentileza em relação ao meu perfil. Aumentei minhas visualizações e consegui alcançar novos parceiros!",
+                text: "Eu adorei todo o profissionalismo e a gentileza em relação ao meu perfil. Aumentei minhas visualizações e consegui alcançar novos parceiros. Me ajudaram a melhorar a qualdiade dos meus vídeos com dicas maravilhosas!!!",
                 name: "- Thayse Rodrigues",
                 position: "Proprietária do perfil @eu.redecorando"
               },
               { 
                 offset: 'md:translate-y-24', 
                 image: '/images/testimonials/testimonial3.png',
-                text: "O Luan tornou nosso YouTube muito mais fácil de apresentar para possíveis parceiros. Recomendamos ele sem dúvida e estamos ansiosos pelos próximos projetos.",
+                text: "O Luan tornou nosso YouTube muito mais fácil de apresentar para possíveis parceiros. Recomendamos ele e sua equiipe. Trabalho profissional, seguro, com relatórios e alinhamentos ótimos. Foi um prazer trabalhar com eles.",
                 name: "- Leonardo Phelipe",
                 position: "Fundador do zeroEleven Agency"
               },
@@ -279,7 +279,7 @@ export default function Component() {
               <Link href="https://tally.so/r/w4N4Qk" className="text-gray-400 hover:text-purple-600 text-sm font-nunito transition-colors duration-300">Política de Dados</Link>
             </nav>
             <div className="text-gray-400 text-sm font-nunito">
-              © 2005-2024 LC Studio (Formerly ProjetoMidia)
+              © 2024 Luan Chicale Studio.
             </div>
           </div>
         </div>
