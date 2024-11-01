@@ -4,7 +4,7 @@ import Link from 'next/link'
 import { useRef, useState } from 'react'
 import { Smartphone, Ruler, Target } from 'lucide-react'
 
-export default function Component() {
+const Component: NextPage = () => {
   const servicesRef = useRef<HTMLElement>(null)
   const testimonialsRef = useRef<HTMLElement>(null)
   const contactRef = useRef<HTMLElement>(null)
@@ -16,11 +16,11 @@ export default function Component() {
   }
 
   const companies = [
-    { name: 'Company 1', logo: '/public/images/company1.png', width: 120, height: 60 },
-    { name: 'Company 2', logo: '/public/images/company2.png', width: 120, height: 60 },
-    { name: 'Company 3', logo: '/public/images/company3.png', width: 120, height: 60 },
-    { name: 'Company 4', logo: '/public/images/company4.png', width: 120, height: 60 },
-    { name: 'Company 5', logo: '/public/images/company5.png', width: 120, height: 60 },
+    { name: 'Company 1', logo: '/images/company1.png' },
+    { name: 'Company 2', logo: '/images/company2.png' },
+    { name: 'Company 3', logo: '/images/company3.png' },
+    { name: 'Company 4', logo: '/images/company4.png' },
+    { name: 'Company 5', logo: '/images/company5.png' },
   ]
 
   return (
@@ -176,7 +176,7 @@ export default function Component() {
               },
               { icon: '/images/services/marketing-digital.svg', 
                 title: 'Marketing Digital', 
-                description: 'Ajudamos você a ser lembrado e impactar o seu nicho no digital.',
+                description: 'Ajudamos você a ser lembrado e  impactar o seu nicho no digital.',
                 link:  'https://api.whatsapp.com/send?phone=5511962140166&text=Ea%C3%AD%20gente,%20tudo%20bem?%20Eu%20gostaria%20de%20saber%20mais%20sobre%20o%20Marketing%20Digital.'
               },
               { icon: '/images/services/webdesign.svg', 
@@ -225,8 +225,8 @@ export default function Component() {
                 <Image 
                   src={company.logo} 
                   alt={company.name} 
-                  width={company.width} 
-                  height={company.height} 
+                  width={120} 
+                  height={60} 
                   className="max-w-full h-auto object-contain" 
                 />
               </div>
@@ -318,3 +318,5 @@ export default function Component() {
     </div>
   )
 }
+
+export default Component
