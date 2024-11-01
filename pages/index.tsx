@@ -16,11 +16,11 @@ export default function Component() {
   }
 
   const companies = [
-    { name: 'Company 1', logo: '/public/images/company1.png' },
-    { name: 'Company 2', logo: '/public/images/company2.png' },
-    { name: 'Company 3', logo: '/public/images/company3.png' },
-    { name: 'Company 4', logo: '/public/images/company4.png' },
-    { name: 'Company 5', logo: '/public/images/company5.png' },
+    { name: 'Company 1', logo: '/public/images/company1.png', width: 120, height: 60 },
+    { name: 'Company 2', logo: '/public/images/company2.png', width: 120, height: 60 },
+    { name: 'Company 3', logo: '/public/images/company3.png', width: 120, height: 60 },
+    { name: 'Company 4', logo: '/public/images/company4.png', width: 120, height: 60 },
+    { name: 'Company 5', logo: '/public/images/company5.png', width: 120, height: 60 },
   ]
 
   return (
@@ -222,7 +222,13 @@ export default function Component() {
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8">
             {companies.map((company, index) => (
               <div key={index} className="flex items-center justify-center p-4 bg-[#1E1E1E] rounded-lg transition-all duration-300 ease-in-out hover:bg-[#252525]">
-                <Image src={company.logo} alt={company.name} width={120} height={60} className="max-w-full h-auto object-contain" />
+                <Image 
+                  src={company.logo} 
+                  alt={company.name} 
+                  width={company.width} 
+                  height={company.height} 
+                  className="max-w-full h-auto object-contain" 
+                />
               </div>
             ))}
           </div>
