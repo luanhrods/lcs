@@ -16,11 +16,11 @@ export default function Component() {
   }
 
   const companies = [
-    { name: 'Company 1', logo: '/public/images/companies/company1.svg' },
-    { name: 'Company 2', logo: '/public/images/companies/company2.svg' },
-    { name: 'Company 3', logo: '/public/images/companies/company3.svg' },
-    { name: 'Company 4', logo: '/public/images/companies/company4.svg' },
-    { name: 'Company 5', logo: '/public/images/companies/company5.svg' },
+    { name: 'Company 1', logo: '/public/images/company1.png' },
+    { name: 'Company 2', logo: '/public/images/company2.png' },
+    { name: 'Company 3', logo: '/public/images/company3.png' },
+    { name: 'Company 4', logo: '/public/images/company4.png' },
+    { name: 'Company 5', logo: '/public/images/company5.png' },
   ]
 
   return (
