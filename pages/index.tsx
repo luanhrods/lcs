@@ -16,12 +16,11 @@ export default function Component() {
   }
 
   const companies = [
-    { name: 'Company 1', logo: '/images/companies/company1.png' },
-    { name: 'Company 2', logo: '/images/companies/company2.png' },
-    { name: 'Company 3', logo: '/images/companies/company3.png' },
-    { name: 'Company 4', logo: '/images/companies/company4.png' },
-    { name: 'Company 5', logo: '/images/companies/company5.png' },
-    { name: 'Company 6', logo: '/images/companies/company6.png' },
+    { name: 'Company 1', logo: '/public/images/companies/company1.svg' },
+    { name: 'Company 2', logo: '/public/images/companies/company2.svg' },
+    { name: 'Company 3', logo: '/public/images/companies/company3.svg' },
+    { name: 'Company 4', logo: '/public/images/companies/company4.svg' },
+    { name: 'Company 5', logo: '/public/images/companies/company5.svg' },
   ]
 
   return (
@@ -220,7 +219,7 @@ export default function Component() {
               <path d="M5 3L19 12L5 21V3Z" fill="currentColor"/>
             </svg>
           </h2>
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-8">
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8">
             {companies.map((company, index) => (
               <div key={index} className="flex items-center justify-center p-4 bg-[#1E1E1E] rounded-lg transition-all duration-300 ease-in-out hover:bg-[#252525]">
                 <Image src={company.logo} alt={company.name} width={120} height={60} className="max-w-full h-auto" />
