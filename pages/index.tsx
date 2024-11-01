@@ -222,7 +222,7 @@ export default function Component() {
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8">
             {companies.map((company, index) => (
               <div key={index} className="flex items-center justify-center p-4 bg-[#1E1E1E] rounded-lg transition-all duration-300 ease-in-out hover:bg-[#252525]">
-                <Image src={company.logo} alt={company.name} width={120} height={60} className="max-w-full h-auto" />
+                <Image src={company.logo} alt={company.name} width={120} height={60} className="max-w-full h-auto object-contain" />
               </div>
             ))}
           </div>
