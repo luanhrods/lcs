@@ -15,6 +15,15 @@ export default function Component() {
     setMenuOpen(false)
   }
 
+  const companies = [
+    { name: 'Company 1', logo: '/images/companies/company1.png' },
+    { name: 'Company 2', logo: '/images/companies/company2.png' },
+    { name: 'Company 3', logo: '/images/companies/company3.png' },
+    { name: 'Company 4', logo: '/images/companies/company4.png' },
+    { name: 'Company 5', logo: '/images/companies/company5.png' },
+    { name: 'Company 6', logo: '/images/companies/company6.png' },
+  ]
+
   return (
     <div className="min-h-screen bg-[#121212] text-white font-sans relative overflow-hidden">
       {/* Flying icons and decorative elements */}
@@ -164,7 +173,7 @@ export default function Component() {
               { icon: '/images/services/criacao-websites.svg', 
                 title: 'Criação de Websites', 
                 description: 'Criamos uma landingpage ou site com a melhor qualidade para seu negócio.',
-                link: 'https://api.whatsapp.com/send?phone=5511962140166&text=Ea%C3%AD%20gente,%20tudo%20bem?%20Eu%20gostaria%20de%20saber%20mais%20sobre%20a%20Cria%C3%A7%C3%A3o%20de%20Websites.'
+                link:  'https://api.whatsapp.com/send?phone=5511962140166&text=Ea%C3%AD%20gente,%20tudo%20bem?%20Eu%20gostaria%20de%20saber%20mais%20sobre%20a%20Cria%C3%A7%C3%A3o%20de%20Websites.'
               },
               { icon: '/images/services/marketing-digital.svg', 
                 title: 'Marketing Digital', 
@@ -199,6 +208,23 @@ export default function Component() {
                 <h3 className="text-lg font-semibold mb-2 font-nunito">{service.title}</h3>
                 <p className="text-gray-400 text-sm font-nunito h-20 flex items-center justify-center">{service.description}</p>
               </Link>
+            ))}
+          </div>
+        </section>
+
+        {/* New section: "Já trabalhamos com" */}
+        <section className="container mx-auto px-6 py-24">
+          <h2 className="text-3xl font-bold mb-16 flex items-center justify-center font-montserrat text-center">
+            Já trabalhamos com
+            <svg className="ml-4 w-6 h-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5 3L19 12L5 21V3Z" fill="currentColor"/>
+            </svg>
+          </h2>
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-8">
+            {companies.map((company, index) => (
+              <div key={index} className="flex items-center justify-center p-4 bg-[#1E1E1E] rounded-lg transition-all duration-300 ease-in-out hover:bg-[#252525]">
+                <Image src={company.logo} alt={company.name} width={120} height={60} className="max-w-full h-auto" />
+              </div>
             ))}
           </div>
         </section>
