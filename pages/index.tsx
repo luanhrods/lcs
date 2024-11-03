@@ -247,7 +247,7 @@ const Component: NextPage = () => {
               { 
                 offset: 'md:translate-y-0', 
                 image: '/images/testimonials/testimonial1.png',
-                text: "Luan trabalhou extremamente bem com nossa equipe e conseguiu concluir as tarefas sem comprometer a qualidade de seu trabalho. Ele ajudou nossa equipe no lançamento de várias campanhas para diversos clientes em diferentes setores na América do Norte.",
+                text: "Luan trabalhou extremamente bem com nossa equipe e conseguiu concluir as tarefas sem comprometer a qualidade de seu trabalho. Ele ajudou nossa equipe no lançamento de várias campanhas para diversos clientes em diferentes setores na América do Norte. - Traduzido do Inglês*",
                 name: "- Justin Lazorko",
                 position: "Diretor de Marketing da YourListingExpert"
               },
