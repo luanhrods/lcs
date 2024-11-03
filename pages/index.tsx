@@ -27,6 +27,15 @@ const Component: NextPage = () => {
   return (
     <>
       <Head>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-L8FB0ESVM2"></script>
+        <script dangerouslySetInnerHTML={{
+          __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-L8FB0ESVM2');
+          `
+        }} />
         <title>Luan Chicale Studio | LC Studio - Serviços Digitais e Marketing de Conteúdo</title>
         <meta name="description" content="O Luan Chicale Studio (LC Studio) oferece serviços de marketing digital, design gráfico e produção de conteúdo. Transforme seu negócio com nossa expertise em projeto de mídia e marketing de conteúdo." />
         <meta name="keywords" content="Luan Chicale, LC Studio, Luan Chicale Studio, Luan Chicale Estúdio, Luan Chicale Estudio, LC Estúdio, Projeto Mídia, Marketing Digital, Serviços Digitais, Marketing de conteúdo, designer gráfico barato, Produção de marketing" />
