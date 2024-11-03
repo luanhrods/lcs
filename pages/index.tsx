@@ -59,7 +59,7 @@ const Component: NextPage = () => {
           <button onClick={() => scrollToSection(testimonialsRef)} className="text-gray-400 hover:text-purple-600 text-sm md:text-base font-nunito transition-colors duration-300">Referências</button>
           <button onClick={() => scrollToSection(contactRef)} className="text-gray-400 hover:text-purple-600 text-sm md:text-base font-nunito transition-colors duration-300">Contato</button>
         </nav>
-        <Link href="https://tally.so/r/3qKJl7" className="hidden md:block bg-transparent text-white px-4 py-2 rounded-md text-sm md:text-base font-medium font-nunito border border-purple-600 hover:bg-purple-600 transition-colors duration-300">
+        <Link href="https://tally.so/r/3qKJl7" target="_blank" rel="noopener noreferrer" className="hidden md:block bg-transparent text-white px-4 py-2 rounded-md text-sm md:text-base font-medium font-nunito border border-purple-600 hover:bg-purple-600 transition-colors duration-300">
           Fale conosco agora
         </Link>
         <button className="md:hidden" onClick={() => setMenuOpen(!menuOpen)}>
@@ -81,7 +81,7 @@ const Component: NextPage = () => {
             <button onClick={() => scrollToSection(servicesRef)} className="block w-full text-left py-2 text-gray-400 hover:text-purple-600 text-base font-nunito transition-colors duration-300">Serviços</button>
             <button onClick={() => scrollToSection(testimonialsRef)} className="block w-full text-left py-2 text-gray-400 hover:text-purple-600 text-base font-nunito transition-colors duration-300">Referências</button>
             <button onClick={() => scrollToSection(contactRef)} className="block w-full text-left py-2 text-gray-400 hover:text-purple-600 text-base font-nunito transition-colors duration-300">Contato</button>
-            <Link href="https://tally.so/r/3qKJl7" className="mt-4 w-full bg-transparent text-white px-4 py-2 rounded-md text-base font-medium font-nunito border border-purple-600 hover:bg-purple-600 transition-colors duration-300 text-center">
+            <Link href="https://tally.so/r/3qKJl7" target="_blank" rel="noopener noreferrer" className="mt-4 w-full bg-transparent text-white px-4 py-2 rounded-md text-base font-medium font-nunito border border-purple-600 hover:bg-purple-600 transition-colors duration-300 text-center">
               Fale conosco agora
             </Link>
           </div>
@@ -99,6 +99,7 @@ const Component: NextPage = () => {
                 O Luan Chicale Studio (LC Studio) é um local onde a criatividade e sonhos se tornam realidade. Transformamos seu negócio dos sonhos em realidade com o marketing digital.
               </p>
               <Link href="https://wa.me/5511962140166?text=Ea%C3%AD%20gente,%20tudo%20bem?%20Eu%20gostaria%20de%20saber%20mais%20sobre%20todos%20os%20servi%C3%A7os%20que%20voc%C3%AAs%20tem,%20por%20favor." 
+                target="_blank" rel="noopener noreferrer"
                 className="bg-transparent text-white px-6 py-3 rounded-md text-base font-medium inline-flex items-center font-nunito border border-purple-600 hover:bg-purple-600 transition-colors duration-300 md:px-4 md:py-2 md:text-sm">
                 Saiba mais
                 <svg className="ml-2 w-4 h-4 md:w-3 md:h-3" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -172,12 +173,12 @@ const Component: NextPage = () => {
               { icon: '/images/services/criacao-websites.svg', 
                 title: 'Criação de Websites', 
                 description: 'Criamos uma landingpage ou site com a melhor qualidade para seu negócio.',
-                link:  'https://api.whatsapp.com/send?phone=5511962140166&text=Ea%C3%AD%20gente,%20tudo%20bem?%20Eu%20gostaria%20de%20saber%20mais%20sobre%20a%20Cria%C3%A7%C3%A3o%20de%20Websites.'
+                link:   'https://api.whatsapp.com/send?phone=5511962140166&text=Ea%C3%AD%20gente,%20tudo%20bem?%20Eu%20gostaria%20de%20saber%20mais%20sobre%20a%20Cria%C3%A7%C3%A3o%20de%20Websites.'
               },
               { icon: '/images/services/marketing-digital.svg', 
                 title: 'Marketing Digital', 
                 description: 'Ajudamos você a ser lembrado e  impactar o seu nicho no digital.',
-                link:  'https://api.whatsapp.com/send?phone=5511962140166&text=Ea%C3%AD%20gente,%20tudo%20bem?%20Eu%20gostaria%20de%20saber%20mais%20sobre%20o%20Marketing%20Digital.'
+                link: 'https://api.whatsapp.com/send?phone=5511962140166&text=Ea%C3%AD%20gente,%20tudo%20bem?%20Eu%20gostaria%20de%20saber%20mais%20sobre%20o%20Marketing%20Digital.'
               },
               { icon: '/images/services/webdesign.svg', 
                 title: 'Webdesign (UX)', 
@@ -200,7 +201,7 @@ const Component: NextPage = () => {
                 link: 'https://wa.me/5511962140166?text=Ea%C3%AD%20gente,%20tudo%20bem?%20Eu%20gostaria%20de%20saber%20mais%20sobre%20Edi%C3%A7%C3%A3o%20de%20V%C3%ADdeos.'
               },
             ].map((service, index) => (
-              <Link href={service.link} key={index} className="flex flex-col items-center text-center p-6 rounded-lg transition-all duration-300 ease-in-out hover:bg-[#1E1E1E] active:scale-95">
+              <Link href={service.link} key={index} target="_blank" rel="noopener noreferrer" className="flex flex-col items-center text-center p-6 rounded-lg transition-all duration-300 ease-in-out hover:bg-[#1E1E1E] active:scale-95">
                 <div className="mb-4 text-purple-600">
                   <Image src={service.icon} alt={service.title} width={69} height={69} />
                 </div>
@@ -286,6 +287,7 @@ const Component: NextPage = () => {
             <div className="flex flex-col md:flex-row items-center justify-between">
               <h2 className="text-3xl md:text-4xl font-bold mb-8 md:mb-0 font-montserrat md:w-1/2 text-center md:text-left"> Transforme seus sonhos<br />em realidade</h2>
               <Link href="https://wa.me/5511962140166?text=Ea%C3%AD%20gente,%20tudo%20bem?%20Eu%20gostaria%20de%20saber%20mais%20sobre%20todos%20os%20servi%C3%A7os%20que%20voc%C3%AAs%20tem,%20por%20favor."
+                target="_blank" rel="noopener noreferrer"
                 className="bg-purple-600 text-white px-8 py-3 rounded-md text-sm md:text-base font-medium inline-flex items-center font-nunito hover:bg-purple-700 transition-colors duration-300">
                 Nosso WhatsApp
                 <svg className="ml-2 w-4 h-4" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -305,9 +307,9 @@ const Component: NextPage = () => {
               <span className="font-semibold text-sm font-montserrat">LC Studio</span>
             </div>
             <nav className="flex flex-wrap justify-center space-x-4 md:space-x-6 mb-4 md:mb-0">
-              <Link href="https://tally.so/r/3qKJl7" className="text-gray-400 hover:text-purple-600 text-sm font-nunito transition-colors duration-300">Ajuda</Link>
-              <Link href="https://tally.so/r/w4N4Qk" className="text-gray-400 hover:text-purple-600 text-sm font-nunito transition-colors duration-300">Política de Privacidade</Link>
-              <Link href="https://tally.so/r/w4N4Qk" className="text-gray-400 hover:text-purple-600 text-sm font-nunito transition-colors duration-300">Política de Dados</Link>
+              <Link href="https://tally.so/r/3qKJl7" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-purple-600 text-sm font-nunito transition-colors duration-300">Ajuda</Link>
+              <Link href="https://tally.so/r/w4N4Qk" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-purple-600 text-sm font-nunito transition-colors duration-300">Política de Privacidade</Link>
+              <Link href="https://tally.so/r/w4N4Qk" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-purple-600 text-sm font-nunito transition-colors duration-300">Política de Dados</Link>
             </nav>
             <div className="text-gray-400 text-sm font-nunito">
               © 2024 Luan Chicale Studio.
