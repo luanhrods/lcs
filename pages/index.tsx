@@ -9,7 +9,7 @@ const Component: NextPage = () => {
   const servicesRef = useRef<HTMLElement>(null)
   const testimonialsRef = useRef<HTMLElement>(null)
   const contactRef = useRef<HTMLElement>(null)
-  const pricingRef = useRef<HTMLElement>(null)
+  // const pricingRef = useRef<HTMLElement>(null) // Removed pricingRef
   const [menuOpen, setMenuOpen] = useState(false)
 
   const scrollToSection = (ref: React.RefObject<HTMLElement>) => {
@@ -38,8 +38,8 @@ const Component: NextPage = () => {
           `
         }} />
         <title>Enchantè Digital | Agência de Marketing Cotia - Serviços Digitais e Marketing de Conteúdo</title>
-        <meta name="description" content="A Enchantè Digital oferece serviços de marketing digital, design gráfico e produção de conteúdo. Transforme seu negócio com nossa expertise em projeto de mídia e marketing de conteúdo em Cotia." />
-        <meta name="keywords" content="Enchantè Digital, Enchante Digital, Agência de Marketing Cotia, Agência de Marketing em Cotia, Marketing Cotia, Projeto Mídia, Marketing Digital, Serviços Digitais, Marketing de conteúdo, designer gráfico barato, Produção de marketing" />
+        <meta name="description" content="A Enchantè Digital oferece serviços de marketing digital, design gráfico e produção de conteúdo. Transforme seu negócio com nossa expertise em projeto de mídia e marketing de conteúdo em Cotia, Campinas, São Paulo e região." />
+        <meta name="keywords" content="Enchantè Digital, Enchante Digital, Agência de Marketing Cotia, Agência de Marketing em Cotia, Marketing Cotia, Marketing Digital Cotia, Agência de Marketing Campinas, Marketing Digital Campinas, Agência de Marketing São Paulo, Marketing Digital São Paulo, Projeto Mídia, Marketing Digital, Serviços Digitais, Marketing de conteúdo, designer gráfico barato, Produção de marketing, SEO Cotia, Social Media Cotia, Google Ads Cotia, Facebook Ads Cotia, Instagram Ads Cotia, Marketing de Conteúdo Cotia, Inbound Marketing Cotia, Outbound Marketing Cotia, Email Marketing Cotia, Marketing de Influência Cotia" />
         <link rel="canonical" href="https://www.enchanteagency.com" />
         <meta property="og:title" content="Enchantè Digital | Agência de Marketing Cotia - Serviços Digitais e Marketing de Conteúdo" />
         <meta property="og:description" content="Transforme seu negócio com a Enchantè Digital. Especialistas em marketing digital, design gráfico e produção de conteúdo em Cotia." />
@@ -54,8 +54,8 @@ const Component: NextPage = () => {
               "name": "Enchantè Digital",
               "alternateName": "Enchante Digital",
               "description": "A Enchantè Digital oferece serviços de marketing digital, design gráfico e produção de conteúdo em Cotia.",
-              "url": "https://www.enchanteagency.com",
-              "logo": "https://www.enchanteagency.com/images/logo.png",
+              "url": "https://www.enchante.digital",
+              "logo": "https://www.enchante.digital/images/logo.png",
               "sameAs": [
                 "https://www.facebook.com/enchanteagency",
                 "https://www.instagram.com/enchanteagency",
@@ -171,7 +171,7 @@ const Component: NextPage = () => {
                   <div>
                     <h3 className="font-semibold font-nunito text-lg">Alta excelência</h3>
                     <p className="text-base text-gray-400 font-nunito">
-                      Ofertando soluções de design e marketing digital no Brasil, Canadá e Estados Unidos da América
+                      Ofertando soluções de design e marketing digital no Brasil, Canadá e EUA e Portugal
                     </p>
                   </div>
                 </div>
@@ -179,7 +179,7 @@ const Component: NextPage = () => {
             </div>
           </section>
 
-          <section className="bg-[#1E1E1E] py-24" ref={servicesRef}>
+          <section className="py-24" ref={servicesRef}>
             <div className="container mx-auto px-6">
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 {[
@@ -196,7 +196,7 @@ const Component: NextPage = () => {
                     description: "Quando dizemos que somos movidos à excelência, isso significa que faremos tudo ao nosso alcance para atingir os resultados esperados. E não estamos sozinhos nessa. Juntamente aos colaboradores e parceiros da Enchantè Digital, temos como ofertar todas suas necessidades com especialistas renomados no mercado, sempre na medida certa para o seu projeto." 
                   },
                 ].map((item, index) => (
-                  <div key={index} className="bg-[#252525] p-6 rounded-lg">
+                  <div key={index} className="bg-[#25252580] p-6 rounded-lg">
                     <div className="bg-purple-600 p-3 rounded-full w-12 h-12 flex items-center justify-center mb-4">
                       {item.icon}
                     </div>
@@ -220,32 +220,32 @@ const Component: NextPage = () => {
                 { icon: '/images/services/criacao-websites.svg', 
                   title: 'Criação de Websites', 
                   description: 'Criamos uma landingpage ou site com a melhor qualidade para seu negócio.',
-                  link:   'https://api.whatsapp.com/send?phone=5511962140166&text=Ea%C3%AD%20gente,%20tudo%20bem?%20Eu%20gostaria%20de%20saber%20mais%20sobre%20a%20Cria%C3%A7%C3%A3o%20de%20Websites.'
+                  link:   'https://tally.so/r/nWpy7N'
                 },
                 { icon: '/images/services/marketing-digital.svg', 
                   title: 'Marketing Digital', 
                   description: 'Ajudamos você a ser lembrado e  impactar o seu nicho no digital.',
-                  link: 'https://api.whatsapp.com/send?phone=5511962140166&text=Ea%C3%AD%20gente,%20tudo%20bem?%20Eu%20gostaria%20de%20saber%20mais%20sobre%20o%20Marketing%20Digital.'
+                  link: 'https://tally.so/r/nWpy7N'
                 },
                 { icon: '/images/services/webdesign.svg', 
                   title: 'Webdesign (UX)', 
                   description: 'Criamos experiências incríveis para seu website ou plataforma.',
-                  link: 'https://wa.me/5511962140166?text=Ea%C3%AD%20gente,%20tudo%20bem?%20Eu%20gostaria%20de%20saber%20mais%20sobre%20Webdesign%20e%20UX/UI.'
+                  link: 'https://tally.so/r/nWpy7N'
                 },
                 { icon: '/images/services/midias-sociais.svg', 
                   title: 'Mídias Sociais', 
                   description: 'Gerenciamos, analisamos e produzimos tudo para você nas redes sociais.',
-                  link: 'https://wa.me/5511962140166?text=Ea%C3%AD%20gente,%20tudo%20bem?%20Eu%20gostaria%20de%20saber%20mais%20sobre%20as%20m%C3%ADdias%20sociais'
+                  link: 'https://tally.so/r/nWpy7N'
                 },
                 { icon: '/images/services/design-grafico.svg', 
                   title: 'Design Gráfico', 
                   description: 'Fazemos imagens criativas e chamativas para seu negócio.',
-                  link: 'https://wa.me/5511962140166?text=Ea%C3%AD%20gente,%20tudo%20bem?%20Eu%20gostaria%20de%20saber%20mais%20sobre%20design%20gr%C3%A1fico.'
+                  link: 'https://tally.so/r/nWpy7N'
                 },
                 { icon: '/images/services/edicao-videos.svg', 
                   title: 'Edição de vídeos', 
                   description: 'Tiramos sua imaginação do papel e ela se tornará realidade com a técnica correta.',
-                  link: 'https://wa.me/5511962140166?text=Ea%C3%AD%20gente,%20tudo%20bem?%20Eu%20gostaria%20de%20saber%20mais%20sobre%20Edi%C3%A7%C3%A3o%20de%20V%C3%ADdeos.'
+                  link: 'https://tally.so/r/nWpy7N'
                 },
               ].map((service, index) => (
                 <Link href={service.link} key={index} target="_blank" rel="noopener noreferrer" className="flex flex-col items-center text-center p-6 rounded-lg transition-all duration-300 ease-in-out hover:bg-[#1E1E1E] active:scale-95">
@@ -282,113 +282,6 @@ const Component: NextPage = () => {
             </div>
           </section>
 
-          {/* New Pricing Section */}
-          <section className="container mx-auto px-6 py-24" ref={pricingRef}>
-            <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold mb-4">Simple, fair pricing for your team</h2>
-              <p className="text-gray-400">Choose the better option for you.</p>
-            </div>
-            <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-              {/* Basic Plan */}
-              <div className="bg-[#1E1E1E] p-8 rounded-lg">
-                <div className="text-center mb-6">
-                  <h3 className="text-2xl font-bold mb-2">$10/mo</h3>
-                  <p className="font-semibold mb-1">Basic plan</p>
-                  <p className="text-sm text-gray-400">Billed annually</p>
-                </div>
-                <ul className="space-y-4 mb-8">
-                  <li className="flex items-center">
-                    <svg className="w-5 h-5 mr-2 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
-                    </svg>
-                    Basic AI model access.
-                  </li>
-                  <li className="flex items-center">
-                    <svg className="w-5 h-5 mr-2 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
-                    </svg>
-                    Limited usage quota per month.
-                  </li>
-                  <li className="flex items-center">
-                    <svg className="w-5 h-5 mr-2 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
-                    </svg>
-                    Standard email support included.
-                  </li>
-                </ul>
-                <button className="w-full py-2 px-4 bg-[#252525] text-white rounded-md hover:bg-[#303030] transition-colors">
-                  Get started
-                </button>
-              </div>
-
-              {/* Pro Plan */}
-              <div className="bg-[#1E1E1E] p-8 rounded-lg relative">
-                <div className="absolute top-0 right-0 bg-purple-600 text-white text-xs px-3 py-1 rounded-tr-lg rounded-bl-lg">
-                  Most popular
-                </div>
-                <div className="text-center mb-6">
-                  <h3 className="text-2xl font-bold mb-2">$20/mo</h3>
-                  <p className="font-semibold mb-1">Pro plan</p>
-                  <p className="text-sm text-gray-400">Billed annually</p>
-                </div>
-                <ul className="space-y-4 mb-8">
-                  <li className="flex items-center">
-                    <svg className="w-5 h-5 mr-2 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
-                    </svg>
-                    Advanced AI model access.
-                  </li>
-                  <li className="flex items-center">
-                    <svg className="w-5 h-5 mr-2 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
-                    </svg>
-                    Generous usage quota per month.
-                  </li>
-                  <li className="flex items-center">
-                    <svg className="w-5 h-5 mr-2 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
-                    </svg>
-                    Priority email and chat support.
-                  </li>
-                </ul>
-                <button className="w-full py-2 px-4 bg-purple-600 text-white rounded-md hover:bg-purple-700 transition-colors">
-                  Get started
-                </button>
-              </div>
-
-              {/* Premium Plan */}
-              <div className="bg-[#1E1E1E] p-8 rounded-lg">
-                <div className="text-center mb-6">
-                  <h3 className="text-2xl font-bold mb-2">$30/mo</h3>
-                  <p className="font-semibold mb-1">Premium plan</p>
-                  <p className="text-sm text-gray-400">Billed annually</p>
-                </div>
-                <ul className="space-y-4 mb-8">
-                  <li className="flex items-center">
-                    <svg className="w-5 h-5 mr-2 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
-                    </svg>
-                    Premium AI models with customization.
-                  </li>
-                  <li className="flex items-center">
-                    <svg className="w-5 h-5 mr-2 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
-                    </svg>
-                    Unlimited usage quota per month.
-                  </li>
-                  <li className="flex items-center">
-                    <svg className="w-5 h-5 mr-2 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
-                    </svg>
-                    Dedicated account manager support.
-                  </li>
-                </ul>
-                <button className="w-full py-2 px-4 bg-[#252525] text-white rounded-md hover:bg-[#303030] transition-colors">
-                  Get started
-                </button>
-              </div>
-            </div>
-          </section>
 
           <section className="container mx-auto px-6 py-24 mb-24" ref={testimonialsRef}>
             <h2 className="text-3xl font-bold mb-16 flex items-center justify-center font-montserrat text-center">
@@ -465,12 +358,12 @@ const Component: NextPage = () => {
                 <Link href="https://tally.so/r/3qKJl7" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-purple-600 text-sm font-nunito transition-colors duration-300">Ajuda</Link>
                 <Link href="https://tally.so/r/w4N4Qk" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-purple-600 text-sm font-nunito transition-colors duration-300">Política de Privacidade</Link>
                 <Link href="https://tally.so/r/w4N4Qk" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-purple-600 text-sm font-nunito transition-colors duration-300">Política de Dados</Link>
-                <Link href="https://luanchicale.com.br/about" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-purple-600 text-sm font-nunito transition-colors duration-300">
+                <Link href="https://inkedin.com/company/enchantedigital/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-purple-600 text-sm font-nunito transition-colors duration-300">
                   <Linkedin className="w-5 h-5" />
                 </Link>
               </nav>
               <div className="text-gray-400 text-sm font-nunito">
-                © 2024 Enchantè Digital.
+                © 2024 Enchantè Digital | Todos os direitos resevados.
               </div>
             </div>
           </div>
