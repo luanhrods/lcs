@@ -98,7 +98,7 @@ const Component: NextPage = () => {
 
         <header className="container mx-auto px-6 py-6 flex justify-between items-center relative z-10">
           <div className="flex items-center space-x-2">
-            <Image src="/images/logo.png" alt="Enchantè Digital Logo" width={100} height={350} />
+            <Image src="/images/logo.png" alt="Enchantè Digital Logo" width={120} height={380} />
             <span className="font-semibold text-sm md:text-base font-montserrat"></span>
           </div>
           <nav className="hidden md:flex space-x-8">
