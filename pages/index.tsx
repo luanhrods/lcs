@@ -3,12 +3,13 @@ import Image from 'next/image'
 import Link from 'next/link'
 import Head from 'next/head'
 import { useRef, useState } from 'react'
-import { Smartphone, Ruler, Target } from 'lucide-react'
+import { Smartphone, Ruler, Target, Linkedin } from 'lucide-react'
 
 const Component: NextPage = () => {
   const servicesRef = useRef<HTMLElement>(null)
   const testimonialsRef = useRef<HTMLElement>(null)
   const contactRef = useRef<HTMLElement>(null)
+  const pricingRef = useRef<HTMLElement>(null)
   const [menuOpen, setMenuOpen] = useState(false)
 
   const scrollToSection = (ref: React.RefObject<HTMLElement>) => {
@@ -36,33 +37,33 @@ const Component: NextPage = () => {
             gtag('config', 'G-L8FB0ESVM2');
           `
         }} />
-        <title>Luan Chicale Studio | LC Studio - Serviços Digitais e Marketing de Conteúdo</title>
-        <meta name="description" content="O Luan Chicale Studio (LC Studio) oferece serviços de marketing digital, design gráfico e produção de conteúdo. Transforme seu negócio com nossa expertise em projeto de mídia e marketing de conteúdo." />
-        <meta name="keywords" content="Luan Chicale, LC Studio, Luan Chicale Studio, Luan Chicale Estúdio, Luan Chicale Estudio, LC Estúdio, Projeto Mídia, Marketing Digital, Serviços Digitais, Marketing de conteúdo, designer gráfico barato, Produção de marketing" />
-        <link rel="canonical" href="https://www.luanchicalestudio.com" />
-        <meta property="og:title" content="Luan Chicale Studio | LC Studio - Serviços Digitais e Marketing de Conteúdo" />
-        <meta property="og:description" content="Transforme seu negócio com o Luan Chicale Studio. Especialistas em marketing digital, design gráfico e produção de conteúdo." />
-        <meta property="og:image" content="https://www.luanchicalestudio.com/og-image.jpg" />
-        <meta property="og:url" content="https://www.luanchicalestudio.com" />
+        <title>Enchantè Digital | Agência de Marketing Cotia - Serviços Digitais e Marketing de Conteúdo</title>
+        <meta name="description" content="A Enchantè Digital oferece serviços de marketing digital, design gráfico e produção de conteúdo. Transforme seu negócio com nossa expertise em projeto de mídia e marketing de conteúdo em Cotia." />
+        <meta name="keywords" content="Enchantè Digital, Enchante Digital, Agência de Marketing Cotia, Agência de Marketing em Cotia, Marketing Cotia, Projeto Mídia, Marketing Digital, Serviços Digitais, Marketing de conteúdo, designer gráfico barato, Produção de marketing" />
+        <link rel="canonical" href="https://www.enchanteagency.com" />
+        <meta property="og:title" content="Enchantè Digital | Agência de Marketing Cotia - Serviços Digitais e Marketing de Conteúdo" />
+        <meta property="og:description" content="Transforme seu negócio com a Enchantè Digital. Especialistas em marketing digital, design gráfico e produção de conteúdo em Cotia." />
+        <meta property="og:image" content="https://www.enchanteagency.com/og-image.jpg" />
+        <meta property="og:url" content="https://www.enchanteagency.com" />
         <meta name="twitter:card" content="summary_large_image" />
         <script type="application/ld+json">
           {`
             {
               "@context": "https://schema.org",
               "@type": "LocalBusiness",
-              "name": "Luan Chicale Studio",
-              "alternateName": "LC Studio",
-              "description": "O Luan Chicale Studio (LC Studio) oferece serviços de marketing digital, design gráfico e produção de conteúdo.",
-              "url": "https://www.luanchicalestudio.com",
-              "logo": "https://www.luanchicalestudio.com/images/logo.png",
+              "name": "Enchantè Digital",
+              "alternateName": "Enchante Digital",
+              "description": "A Enchantè Digital oferece serviços de marketing digital, design gráfico e produção de conteúdo em Cotia, são Paulo, Campinas e região.",
+              "url": "https://www.enchante.digital",
+              "logo": "https://www.enchante.digital/images/logo.png",
               "sameAs": [
-                "https://www.facebook.com/luanchicalestudio",
-                "https://www.instagram.com/luanchicalestudio",
-                "https://www.linkedin.com/company/luanchicalestudio"
+                "https://www.facebook.com/enchanteagency",
+                "https://www.instagram.com/enchanteagency",
+                "https://www.linkedin.com/company/enchanteagency"
               ],
               "address": {
                 "@type": "PostalAddress",
-                "addressLocality": "São Paulo",
+                "addressLocality": "Cotia",
                 "addressRegion": "SP",
                 "addressCountry": "BR"
               }
@@ -97,8 +98,8 @@ const Component: NextPage = () => {
 
         <header className="container mx-auto px-6 py-6 flex justify-between items-center relative z-10">
           <div className="flex items-center space-x-2">
-            <Image src="/images/logo.png" alt="Luan Chicale Studio Logo" width={40} height={40} />
-            <span className="font-semibold text-sm md:text-base font-montserrat">Luan Chicale Studio</span>
+            <Image src="/images/logo.png" alt="Enchantè Digital Logo" width={40} height={40} />
+            <span className="font-semibold text-sm md:text-base font-montserrat"></span>
           </div>
           <nav className="hidden md:flex space-x-8">
             <button onClick={() => scrollToSection(servicesRef)} className="text-gray-400 hover:text-purple-600 text-sm md:text-base font-nunito transition-colors duration-300">Serviços</button>
@@ -142,7 +143,7 @@ const Component: NextPage = () => {
                   Construa<br />seus sonhos
                 </h1>
                 <p className="text-gray-400 mb-12 text-lg md:text-xl max-w-md font-nunito">
-                  O Luan Chicale Studio (LC Studio) é um local onde a criatividade e sonhos se tornam realidade. Transformamos seu negócio dos sonhos em realidade com o marketing digital.
+                  A Enchantè Digital é um local onde a criatividade e sonhos se tornam realidade. Transformamos seu negócio dos sonhos em realidade com o marketing digital em Cotia.
                 </p>
                 <Link href="https://wa.me/5511962140166?text=Ea%C3%AD%20gente,%20tudo%20bem?%20Eu%20gostaria%20de%20saber%20mais%20sobre%20todos%20os%20servi%C3%A7os%20que%20voc%C3%AAs%20tem,%20por%20favor." 
                   target="_blank" rel="noopener noreferrer"
@@ -192,7 +193,7 @@ const Component: NextPage = () => {
                   },
                   { icon: <Target className="w-6 h-6" />, 
                     title: "Movidos à excelência", 
-                    description: "Quando dizemos que somos movidos à excelência, isso significa que faremos tudo ao nosso alcance para atingir os resultados esperados. E não estamos sozinhos nessa. Juntamente aos colaboradores e parceiros do LC Studio, temos como ofertar todas suas necessidades com especialistas renomados no mercado, sempre na medida certa para o seu projeto." 
+                    description: "Quando dizemos que somos movidos à excelência, isso significa que faremos tudo ao nosso alcance para atingir os resultados esperados. E não estamos sozinhos nessa. Juntamente aos colaboradores e parceiros da Enchantè Digital, temos como ofertar todas suas necessidades com especialistas renomados no mercado, sempre na medida certa para o seu projeto." 
                   },
                 ].map((item, index) => (
                   <div key={index} className="bg-[#252525] p-6 rounded-lg">
@@ -249,7 +250,7 @@ const Component: NextPage = () => {
               ].map((service, index) => (
                 <Link href={service.link} key={index} target="_blank" rel="noopener noreferrer" className="flex flex-col items-center text-center p-6 rounded-lg transition-all duration-300 ease-in-out hover:bg-[#1E1E1E] active:scale-95">
                   <div className="mb-4 text-purple-600">
-                    <Image src={service.icon} alt={`${service.title} - Luan Chicale Studio`} width={69} height={69} />
+                    <Image src={service.icon} alt={`${service.title} - Enchantè Digital`} width={69} height={69} />
                   </div>
                   <h3 className="text-lg font-semibold mb-2 font-nunito">{service.title}</h3>
                   <p className="text-gray-400 text-sm font-nunito h-20 flex items-center justify-center">{service.description}</p>
@@ -258,7 +259,7 @@ const Component: NextPage = () => {
             </div>
           </section>
 
-          {/* New section: "Já trabalhamos com" */}
+          {/* "Já trabalhamos com" section */}
           <section className="container mx-auto px-6 py-24">
             <h2 className="text-3xl font-bold mb-16 flex items-center justify-center font-montserrat text-center">
               Já trabalhamos com
@@ -271,13 +272,121 @@ const Component: NextPage = () => {
                 <div key={index} className="flex items-center justify-center p-4 bg-[#1E1E1E] rounded-lg transition-all duration-300 ease-in-out hover:bg-[#252525]">
                   <Image 
                     src={company.logo} 
-                    alt={`${company.name} - Cliente do Luan Chicale Studio`} 
+                    alt={`${company.name} - Cliente da Enchantè Digital`} 
                     width={120} 
                     height={60} 
                     className="max-w-full h-auto object-contain" 
                   />
                 </div>
               ))}
+            </div>
+          </section>
+
+          {/* New Pricing Section */}
+          <section className="container mx-auto px-6 py-24" ref={pricingRef}>
+            <div className="text-center mb-12">
+              <h2 className="text-3xl font-bold mb-4">Escolha a melhor opção para você</h2>
+              <p className="text-gray-400">O seu investimento depende do que precisa, e aqui, tudo é personalizado pra você.</p>
+            </div>
+            <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+              {/* Basic Plan */}
+              <div className="bg-[#1E1E1E] p-8 rounded-lg">
+                <div className="text-center mb-6">
+                  <h3 className="text-2xl font-bold mb-2">Gestão de Mídias Sociais/h3>
+                  <p className="font-semibold mb-1">À partir de R$400,00/p>
+                  <p className="text-sm text-gray-400">Serviço Mensal</p>
+                </div>
+                <ul className="space-y-4 mb-8">
+                  <li className="flex items-center">
+                    <svg className="w-5 h-5 mr-2 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                    Basic AI model access.
+                  </li>
+                  <li className="flex items-center">
+                    <svg className="w-5 h-5 mr-2 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                    Limited usage quota per month.
+                  </li>
+                  <li className="flex items-center">
+                    <svg className="w-5 h-5 mr-2 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                    Standard email support included.
+                  </li>
+                </ul>
+                <button className="w-full py-2 px-4 bg-[#252525] text-white rounded-md hover:bg-[#303030] transition-colors">
+                  Get started
+                </button>
+              </div>
+
+              {/* Pro Plan */}
+              <div className="bg-[#1E1E1E] p-8 rounded-lg relative">
+                <div className="absolute top-0 right-0 bg-purple-600 text-white text-xs px-3 py-1 rounded-tr-lg rounded-bl-lg">
+                  Most popular
+                </div>
+                <div className="text-center mb-6">
+                  <h3 className="text-2xl font-bold mb-2">$20/mo</h3>
+                  <p className="font-semibold mb-1">Pro plan</p>
+                  <p className="text-sm text-gray-400">Billed annually</p>
+                </div>
+                <ul className="space-y-4 mb-8">
+                  <li className="flex items-center">
+                    <svg className="w-5 h-5 mr-2 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                    Advanced AI model access.
+                  </li>
+                  <li className="flex items-center">
+                    <svg className="w-5 h-5 mr-2 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                    Generous usage quota per month.
+                  </li>
+                  <li className="flex items-center">
+                    <svg className="w-5 h-5 mr-2 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                    Priority email and chat support.
+                  </li>
+                </ul>
+                <button className="w-full py-2 px-4 bg-purple-600 text-white rounded-md hover:bg-purple-700 transition-colors">
+                  Get started
+                </button>
+              </div>
+
+              {/* Premium Plan */}
+              <div className="bg-[#1E1E1E] p-8 rounded-lg">
+                <div className="text-center mb-6">
+                  <h3 className="text-2xl font-bold mb-2">$30/mo</h3>
+                  <p className="font-semibold mb-1">Premium plan</p>
+                  <p className="text-sm text-gray-400">Billed annually</p>
+                </div>
+                <ul className="space-y-4 mb-8">
+                  <li className="flex items-center">
+                    <svg className="w-5 h-5 mr-2 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                    Premium AI models with customization.
+                  </li>
+                  <li className="flex items-center">
+                    <svg className="w-5 h-5 mr-2 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                    Unlimited usage quota per month.
+                  </li>
+                  <li className="flex items-center">
+                    <svg className="w-5 h-5 mr-2 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                    Dedicated account manager support.
+                  </li>
+                </ul>
+                <button className="w-full py-2 px-4 bg-[#252525] text-white rounded-md hover:bg-[#303030] transition-colors">
+                  Get started
+                </button>
+              </div>
             </div>
           </section>
 
@@ -293,7 +402,7 @@ const Component: NextPage = () => {
                 { 
                   offset: 'md:translate-y-0', 
                   image: '/images/testimonials/testimonial1.png',
-                  text: "Luan trabalhou extremamente bem com nossa equipe e conseguiu concluir as tarefas sem comprometer a qualidade de seu trabalho. Ele ajudou nossa equipe no lançamento de várias campanhas para diversos clientes em diferentes setores na América do Norte.",
+                  text: "A Enchantè Digital trabalhou extremamente bem com nossa equipe e conseguiu concluir as tarefas sem comprometer a qualidade de seu trabalho. Eles ajudaram nossa equipe no lançamento de várias campanhas para diversos clientes em diferentes setores na América do Norte.",
                   name: "- Justin Lazorko",
                   position: "Diretor de Marketing da YourListingExpert"
                 },
@@ -307,7 +416,7 @@ const Component: NextPage = () => {
                 { 
                   offset: 'md:translate-y-24', 
                   image: '/images/testimonials/testimonial3.png',
-                  text: "O Luan tornou nosso YouTube muito mais fácil de apresentar para possíveis parceiros. Recomendamos ele e sua equiipe. Trabalho profissional, seguro, com relatórios e alinhamentos ótimos. Foi um prazer trabalhar com eles.",
+                  text: "A Enchantè Digital tornou nosso YouTube muito mais fácil de apresentar para possíveis parceiros. Recomendamos eles e sua equipe. Trabalho profissional, seguro, com relatórios e alinhamentos ótimos. Foi um prazer trabalhar com eles.",
                   name: "- Leonardo Phelipe",
                   position: "Fundador do zeroEleven Agency"
                 },
@@ -317,7 +426,7 @@ const Component: NextPage = () => {
                     {item.text}
                   </p>
                   <div className="flex items-center">
-                    <Image src={item.image} alt={`${item.name} - Depoimento sobre o Luan Chicale Studio`} width={64} height={64} className="rounded-full mr-4" />
+                    <Image src={item.image} alt={`${item.name} - Depoimento sobre a Enchantè Digital`} width={64} height={64} className="rounded-full mr-4" />
                     <div>
                       <h4 className="font-semibold text-base font-nunito">{item.name}</h4>
                       <p className="text-sm text-gray-400 font-nunito">{item.position}</p>
@@ -349,16 +458,19 @@ const Component: NextPage = () => {
           <div className="container mx-auto px-6">
             <div className="flex flex-col md:flex-row justify-between items-center">
               <div className="flex items-center space-x-2 mb-4 md:mb-0">
-                <Image src="/images/logo.png" alt="LC Studio Logo" width={32} height={32} />
-                <span className="font-semibold text-sm font-montserrat">LC Studio</span>
+                <Image src="/images/logo.png" alt="Enchantè Digital Logo" width={32} height={32} />
+                <span className="font-semibold text-sm font-montserrat"></span>
               </div>
               <nav className="flex flex-wrap justify-center space-x-4 md:space-x-6 mb-4 md:mb-0">
                 <Link href="https://tally.so/r/3qKJl7" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-purple-600 text-sm font-nunito transition-colors duration-300">Ajuda</Link>
                 <Link href="https://tally.so/r/w4N4Qk" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-purple-600 text-sm font-nunito transition-colors duration-300">Política de Privacidade</Link>
                 <Link href="https://tally.so/r/w4N4Qk" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-purple-600 text-sm font-nunito transition-colors duration-300">Política de Dados</Link>
+                <Link href="https://luanchicale.com.br/about" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-purple-600 text-sm font-nunito transition-colors duration-300">
+                  <Linkedin className="w-5 h-5" />
+                </Link>
               </nav>
               <div className="text-gray-400 text-sm font-nunito">
-                © 2024 Luan Chicale Studio.
+                © 2024 Enchantè Digital.
               </div>
             </div>
           </div>
