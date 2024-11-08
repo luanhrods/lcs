@@ -3,6 +3,6 @@ export default function handler(req, res) {
   res.write("User-agent: *\n")
   res.write("Allow: /\n")
   res.write("\n")
-  res.write("Sitemap: https://www.luanchicalestudio.com/sitemap.xml")
+  res.write("Sitemap: https:/enchante.digital/sitemap.xml")
   res.end()
 }
