@@ -43,8 +43,8 @@ const Component: NextPage = () => {
         <link rel="canonical" href="https://www.enchanteagency.com" />
         <meta property="og:title" content="Enchantè Digital | Agência de Marketing Cotia - Serviços Digitais e Marketing de Conteúdo" />
         <meta property="og:description" content="Transforme seu negócio com a Enchantè Digital. Especialistas em marketing digital, design gráfico e produção de conteúdo em Cotia." />
-        <meta property="og:image" content="https://www.enchanteagency.com/og-image.jpg" />
-        <meta property="og:url" content="https://www.enchanteagency.com" />
+        <meta property="og:image" content="https://www.enchante.digital/og-image.jpg" />
+        <meta property="og:url" content="https://www.enchante.digital" />
         <meta name="twitter:card" content="summary_large_image" />
         <script type="application/ld+json">
           {`
@@ -59,7 +59,7 @@ const Component: NextPage = () => {
               "sameAs": [
                 "https://www.facebook.com/enchanteagency",
                 "https://www.instagram.com/enchanteagency",
-                "https://www.linkedin.com/company/enchanteagency"
+                "https://www.linkedin.com/company/enchantedigital"
               ],
               "address": {
                 "@type": "PostalAddress",
@@ -145,7 +145,7 @@ const Component: NextPage = () => {
                 <p className="text-gray-400 mb-12 text-lg md:text-xl max-w-md font-nunito">
                   A Enchantè Digital é um local onde a criatividade e sonhos se tornam realidade. Transformamos seu negócio dos sonhos em realidade com o marketing digital em Cotia.
                 </p>
-                <Link href="https://wa.me/5511962140166?text=Ea%C3%AD%20gente,%20tudo%20bem?%20Eu%20gostaria%20de%20saber%20mais%20sobre%20todos%20os%20servi%C3%A7os%20que%20voc%C3%AAs%20tem,%20por%20favor." 
+                <Link href="https://tally.so/r/nWpy7N" 
                   target="_blank" rel="noopener noreferrer"
                   className="bg-transparent text-white px-6 py-3 rounded-md text-base font-medium inline-flex items-center font-nunito border border-purple-600 hover:bg-purple-600 transition-colors duration-300 md:px-4 md:py-2 md:text-sm">
                   Saiba mais
@@ -358,7 +358,7 @@ const Component: NextPage = () => {
                 <Link href="https://tally.so/r/3qKJl7" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-purple-600 text-sm font-nunito transition-colors duration-300">Ajuda</Link>
                 <Link href="https://tally.so/r/w4N4Qk" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-purple-600 text-sm font-nunito transition-colors duration-300">Política de Privacidade</Link>
                 <Link href="https://tally.so/r/w4N4Qk" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-purple-600 text-sm font-nunito transition-colors duration-300">Política de Dados</Link>
-                <Link href="https://inkedin.com/company/enchantedigital/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-purple-600 text-sm font-nunito transition-colors duration-300">
+                <Link href="https://linkedin.com/company/enchantedigital/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-purple-600 text-sm font-nunito transition-colors duration-300">
                   <Linkedin className="w-5 h-5" />
                 </Link>
               </nav>
