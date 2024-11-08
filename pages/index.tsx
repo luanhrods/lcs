@@ -53,9 +53,9 @@ const Component: NextPage = () => {
               "@type": "LocalBusiness",
               "name": "Enchantè Digital",
               "alternateName": "Enchante Digital",
-              "description": "A Enchantè Digital oferece serviços de marketing digital, design gráfico e produção de conteúdo em Cotia, são Paulo, Campinas e região.",
-              "url": "https://www.enchante.digital",
-              "logo": "https://www.enchante.digital/images/logo.png",
+              "description": "A Enchantè Digital oferece serviços de marketing digital, design gráfico e produção de conteúdo em Cotia.",
+              "url": "https://www.enchanteagency.com",
+              "logo": "https://www.enchanteagency.com/images/logo.png",
               "sameAs": [
                 "https://www.facebook.com/enchanteagency",
                 "https://www.instagram.com/enchanteagency",
@@ -285,16 +285,16 @@ const Component: NextPage = () => {
           {/* New Pricing Section */}
           <section className="container mx-auto px-6 py-24" ref={pricingRef}>
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold mb-4">Escolha a melhor opção para você</h2>
-              <p className="text-gray-400">O seu investimento depende do que precisa, e aqui, tudo é personalizado pra você.</p>
+              <h2 className="text-3xl font-bold mb-4">Simple, fair pricing for your team</h2>
+              <p className="text-gray-400">Choose the better option for you.</p>
             </div>
             <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
               {/* Basic Plan */}
               <div className="bg-[#1E1E1E] p-8 rounded-lg">
                 <div className="text-center mb-6">
-                  <h3 className="text-2xl font-bold mb-2">Gestão de Mídias Sociais/h3>
-                  <p className="font-semibold mb-1">À partir de R$400,00/p>
-                  <p className="text-sm text-gray-400">Serviço Mensal</p>
+                  <h3 className="text-2xl font-bold mb-2">$10/mo</h3>
+                  <p className="font-semibold mb-1">Basic plan</p>
+                  <p className="text-sm text-gray-400">Billed annually</p>
                 </div>
                 <ul className="space-y-4 mb-8">
                   <li className="flex items-center">
