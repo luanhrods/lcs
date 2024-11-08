@@ -351,7 +351,7 @@ const Component: NextPage = () => {
           <div className="container mx-auto px-6">
             <div className="flex flex-col md:flex-row justify-between items-center">
               <div className="flex items-center space-x-2 mb-4 md:mb-0">
-                <Image src="/images/logo.png" alt="Enchantè Digital Logo" width={32} height={32} />
+                <Image src="/images/logo.png" alt="Enchantè Digital Logo" width={491} height={151} />
                 <span className="font-semibold text-sm font-montserrat"></span>
               </div>
               <nav className="flex flex-wrap justify-center space-x-4 md:space-x-6 mb-4 md:mb-0">
