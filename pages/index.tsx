@@ -104,8 +104,8 @@ const Home: NextPage = () => {
                 <Image
                   src="/images/astro1.png"
                   alt="Astronaut illustration"
-                  width={500}
-                  height={500}
+                  width={300}
+                  height={300}
                   className="w-full h-auto"
                 />
               </div>
