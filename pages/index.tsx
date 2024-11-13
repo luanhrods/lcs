@@ -63,7 +63,7 @@ const Component: NextPage = () => {
               </div>
               <div className="md:w-1/2 relative mt-12 md:mt-0 md:pl-12">
                 <Image
-                  src="/public/images/astro1.png"
+                  src="/public/images/Astro1.png"
                   alt="Astronaut illustration"
                   width={500}
                   height={500}
